@@ -1,0 +1,14 @@
+h1 {
+    background: black;
+    color: white;
+    margin: 0px 0px 2px 0px;
+    font-size: 40px;
+    padding: 2px 1px 5px 1px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.formulario_dificultad{
+    width: 500px;
+    height: 500px;
+    color: aqua;
+}

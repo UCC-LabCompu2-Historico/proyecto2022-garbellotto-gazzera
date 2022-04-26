@@ -7,7 +7,7 @@
     <meta content="Tomas Garbellotto" name="autor">
     <meta content="Juego Sudoku" name="descripcion">
     <meta content="sudoku, juego, entretenimiento" name="palabras-principales">
-    <link rel="stylesheet" href="miEstilo.css" type="text/css">
+    <link rel="stylesheet" href="Estilo_Index.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/favicon-sudoku.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +17,8 @@
 <header>
     <h1>SUDOKU</h1>
 </header>
-<div>
-    <form id="formulario_dificultad">
+<div id="formulario_dificultad">
+    <form>
         <p>
             Dificultad: <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label for="radio_facil">Facil</label>
                         <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label for="radio_normal">Normal</label>
@@ -43,6 +43,8 @@
             </select>
         </p>
     </form>
+</div>
+<div>
     <p>
         <button><a href="jugar-2.html">Siguiente</a></button>
         <button><a href="index.html">Volver a Inicio</a></button>
