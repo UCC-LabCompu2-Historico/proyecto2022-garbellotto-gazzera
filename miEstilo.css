@@ -1,49 +1,34 @@
 h1 {
-    background:black;
-    color:white;
-    margin:0px 0px 2px 0px;
-    font-size:40px;
-    padding:2px 1px 5px 1px;
-    text-align:center;
+    background: black;
+    color: white;
+    margin: 0px 0px 2px 0px;
+    font-size: 40px;
+    padding: 2px 1px 5px 1px;
+    text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
-#tablero{
+
+#tablero {
     border-collapse: collapse;
     width: 594px;
     height: 594px;
 }
-tr{
+
+tr {
     height: 66px;
     width: 594px;
 }
-td{
+
+td {
     border: 1px solid black;
     height: 66px;
     width: 66px;
 }
-.borde_derecho{
+
+.borde_derecho {
     border-right: 3px solid black;
 }
-.borde_fila{
+
+.borde_fila {
     border-bottom: 3px solid black;
-}
-#primer_div{
-    background-color: rgb(114, 114, 114);
-    width: 1904px;
-    height: 100px;
-    text-align:center;
-}
-#segundo_div{
-    background-color: rgb(114, 114, 114);
-    float: right;
-    width: 952px;
-    height: 100px;
-    text-align:center;
-}
-#tercer_div{
-    background-color: rgb(114, 114, 114);
-    float: left;
-    width: 952px;
-    height: 100px;
-    text-align:center;
 }
