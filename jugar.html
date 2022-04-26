@@ -12,14 +12,36 @@
 <body>
 <header>
     <h1>SUDOKU</h1>
-    <img src="imagenes/logo_sudoku.jpg">
 </header>
-<nav> </nav>
-<section> 
+<div> 
+    <form id="formulario_dificultad">
+        <p>
+            Dificultad: <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label for="radio_facil">Facil</label>
+                        <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label for="radio_normal">Normal</label>
+                        <input type="radio" name="dificultad" value="dificil" id="radio_dificil"> <label for="radio_dificil">Dificil</label>
+        </p>
+        <p>
+            <label for="tiempo">Tiempo:</label>
+            <select name="tiempo" id="tiempo">
+                <option value="ilimitado"> Ilimitado </option>
+                <option value="10_min"> 10 min </option>
+                <option value="15_min"> 15 min </option>
+                <option value="20_min"> 20 min </option>
+                <option value="25_min"> 25 min </option>
+            </select>
+            
+            <label for="vidas">Vidas:</label>
+            <select name="vidas" id="vidas">
+                <option value="ilimitado"> Ilimitado </option>
+                <option value="5"> 5 </option>
+                <option value="10"> 10 </option>
+                <option value="15"> 15 </option>
+            </select>
+        </p>
+    </form>
     <p>
-        <button><a href="jugar.html">Jugar</a></button>
-        <button><a href="como_jugar.html">Como Jugar</a></button>
+        <button><a href="jugar-2.html">Siguiente</a></button>
     </p>
-</section>
+</div>
 </body>
 </html>
