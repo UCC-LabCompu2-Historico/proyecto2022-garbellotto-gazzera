@@ -1,5 +1,29 @@
 h1 {
-    color: #e30606;
+    background:black;
+    color:white;
+    margin:0px 0px 2px 0px;
+    font-size:40px;
+    padding:2px 1px 5px 1px;
+    text-align:center;
     font-family: 'Press Start 2P', cursive;
 }
 
+
+#tablero{
+    border: 2px solid #ff0000;
+    width: 594px;
+    width: 594px;
+}
+tr{
+    border: 2px solid #ff0000;
+    height: 66px;
+    width: 594px;
+}
+td{
+    
+    height: 66px;
+    width: 65px;
+}
+.borde_derecho{
+    border-right: 3px solid #181818;
+}
