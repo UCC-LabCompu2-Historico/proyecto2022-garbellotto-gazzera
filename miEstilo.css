@@ -7,17 +7,12 @@ h1 {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
-<<<<<<< HEAD
 
-#tablero {
-=======
 #tablero{
->>>>>>> 794de48e836e7c8da27e9471ec5e61f0a8952072
     border-collapse: collapse;
     width: 594px;
     height: 594px;
 }
-<<<<<<< HEAD
 
 tr {
     height: 66px;
@@ -25,18 +20,15 @@ tr {
 }
 
 td {
-=======
 tr{
     height: 66px;
     width: 594px;
 }
 td{
->>>>>>> 794de48e836e7c8da27e9471ec5e61f0a8952072
     border: 1px solid black;
     height: 66px;
     width: 66px;
 }
-<<<<<<< HEAD
 
 .borde_derecho {
     border-right: 3px solid black;
@@ -46,11 +38,9 @@ td{
     border-bottom: 3px solid black;
 }
 
-=======
 .borde_derecho{
     border-right: 3px solid black;
 }
 .borde_fila{
     border-bottom: 3px solid black;
 }
->>>>>>> 794de48e836e7c8da27e9471ec5e61f0a8952072
