@@ -32,3 +32,26 @@ td {
 .borde_fila {
     border-bottom: 3px solid black;
 }
+
+#primer_div{
+    background-color: rgb(114, 114, 114);
+    width: 1904px;
+    height: 100px;
+    text-align:center;
+}
+
+#segundo_div{
+    background-color: rgb(114, 114, 114);
+    float: right;
+    width: 952px;
+    height: 100px;
+    text-align:center;
+}
+
+#tercer_div{
+    background-color: rgb(114, 114, 114);
+    float: left;
+    width: 952px;
+    height: 100px;
+    text-align:center;
+}
