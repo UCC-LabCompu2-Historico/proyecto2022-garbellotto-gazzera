@@ -7,23 +7,23 @@ h1 {
     text-align:center;
     font-family: 'Press Start 2P', cursive;
 }
-
-
 #tablero{
-    border: 2px solid #ff0000;
+    border-collapse: collapse;
     width: 594px;
-    width: 594px;
+    height: 594px;
 }
 tr{
-    border: 2px solid #ff0000;
     height: 66px;
     width: 594px;
 }
 td{
-    
+    border: 1px solid black;
     height: 66px;
-    width: 65px;
+    width: 66px;
 }
 .borde_derecho{
-    border-right: 3px solid #181818;
+    border-right: 3px solid black;
+}
+.borde_fila{
+    border-bottom: 3px solid black;
 }
