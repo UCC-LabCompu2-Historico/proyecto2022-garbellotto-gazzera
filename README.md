@@ -55,8 +55,7 @@ Link al sitio: [Sudoku](https://ucc-labcompu2.github.io/proyecto2022-garbellotto
 - [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen
   representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a
   Eventos”)
-- [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
-- [ ]g No utilizar etiquetas deprecadas.
+- [ ] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc. - [ ]g No utilizar etiquetas deprecadas.
 - [ ] Todas las etiquetas deben estar correctamente cerradas
 - [ ] Los ids de los elementos deben ser unívocos
 
