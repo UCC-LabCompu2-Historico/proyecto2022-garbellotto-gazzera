@@ -1,14 +1,28 @@
 h1 {
-    background: black;
-    color: white;
-    margin: 0px 0px 2px 0px;
-    font-size: 40px;
-    padding: 2px 1px 5px 1px;
+    height: 300px;
+    width: 100%;
+    font-size: 80px;
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: rgb(255, 119, 92);
+    line-height: 300px;
 }
-.formulario_dificultad{
-    width: 500px;
-    height: 500px;
-    color: aqua;
+#formulario_dificultad{
+    width: 400px;
+    height: 155px;
+    background: rgba(252, 159, 140, 0.842);
+    text-align: center;
+    line-height: 45px;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(66, 66, 66);
+}
+body{
+    background:
+    url(imagenes/fondo.png);
+}
+#tiempo{
+    margin-right: 20px;
 }

@@ -17,15 +17,16 @@
 <header>
     <h1>SUDOKU</h1>
 </header>
-<div id="formulario_dificultad">
-    <form>
+<div align="center">
+    <form id="formulario_dificultad">
         <p>
-            Dificultad: <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label for="radio_facil">Facil</label>
-                        <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label for="radio_normal">Normal</label>
-                        <input type="radio" name="dificultad" value="dificil" id="radio_dificil"> <label for="radio_dificil">Dificil</label>
+            <label for="dificultad"><b>Dificultad: </b></label> 
+                <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label for="radio_facil">Facil</label>
+                <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label for="radio_normal">Normal</label>
+                <input type="radio" name="dificultad" value="dificil" id="radio_dificil"> <label for="radio_dificil">Dificil</label>
         </p>
         <p>
-            <label for="tiempo">Tiempo:</label>
+            <label for="tiempo"><b>Tiempo: </b></label>
             <select name="tiempo" id="tiempo">
                 <option value="ilimitado"> Ilimitado</option>
                 <option value="10_min"> 10 min</option>
@@ -34,7 +35,7 @@
                 <option value="25_min"> 25 min</option>
             </select>
 
-            <label for="vidas">Vidas:</label>
+            <label for="vidas"><b>Vidas: </b></label>
             <select name="vidas" id="vidas">
                 <option value="ilimitado"> Ilimitado</option>
                 <option value="5"> 5</option>

@@ -6,6 +6,7 @@ h1 {
     padding: 2px 1px 5px 1px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
+    margin-bottom: 25px;
 }
 
 #tablero {
@@ -33,25 +34,16 @@ td {
     border-bottom: 3px solid black;
 }
 
-#primer_div{
+.div{
+    margin-bottom: 30px;
     background-color: rgb(114, 114, 114);
-    width: 1904px;
     height: 100px;
+    width: 33%;
     text-align:center;
-}
-
-#segundo_div{
-    background-color: rgb(114, 114, 114);
-    float: right;
-    width: 952px;
-    height: 100px;
-    text-align:center;
-}
-
-#tercer_div{
-    background-color: rgb(114, 114, 114);
+    line-height: 50px;
     float: left;
-    width: 952px;
-    height: 100px;
-    text-align:center;
+}
+
+.clearfix{
+    clear: both;
 }
