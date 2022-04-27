@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-.boton{
+button{
     background-color: rgb(255,101,71);
     border: none;
     color: white;
@@ -29,13 +29,17 @@ body {
     cursor: pointer;
 }
 
-.boton{
+a:visited,a:link{
+    color: #000000;
+}
+
+button{
     background-color: white;
     color: black;
     border: 2px solid rgb(255,101,71);
 }
 
-.boton:hover{
+button:hover{
     border: 3px solid rgb(255,101,71);
     background-color: rgb(255,101,71,0.6);
     color: white;
