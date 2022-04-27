@@ -1,0 +1,48 @@
+h1 {
+    background: black;
+    color: white;
+    margin: 0px 0px 2px 0px;
+    font-size: 40px;
+    padding: 2px 1px 5px 1px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    background: linear-gradient(to bottom, white, gray, black);
+    background: url("imagenes/fondo_gris.png");
+    text-align: center;
+}
+
+a:visited, a:link{
+    color: rgb(66, 66, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(255, 101, 71);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button {
+    background-color: white;
+    color: rgb(255, 101, 71);
+}
+
+button:hover {
+    border: 3px solid rgb(255, 101, 71);
+    background-color: rgb(255, 101, 71,0.6);
+    color: white;
+}
