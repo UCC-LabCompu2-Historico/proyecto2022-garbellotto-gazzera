@@ -1,0 +1,16 @@
+h1 {
+    background: black;
+    color: white;
+    margin: 0px 0px 2px 0px;
+    font-size: 40px;
+    padding: 2px 1px 5px 1px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body{
+    background: linear-gradient(to bottom, white, gray,black);
+    background: url("imagenes/fondo_gris.png");
+    text-align: center;
+}
+
