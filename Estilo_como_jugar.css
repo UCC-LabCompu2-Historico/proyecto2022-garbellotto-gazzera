@@ -14,8 +14,15 @@ body {
     text-align: center;
 }
 
-button{
-    background-color: rgb(255,101,71);
+a:visited, a:link{
+    color: rgb(66, 66, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(255, 101, 71);
     border: none;
     color: white;
     padding: 16px 32px;
@@ -29,18 +36,13 @@ button{
     cursor: pointer;
 }
 
-a:visited,a:link{
-    color: #000000;
-}
-
-button{
+button {
     background-color: white;
-    color: black;
-    border: 2px solid rgb(255,101,71);
+    color: rgb(255, 101, 71);
 }
 
-button:hover{
-    border: 3px solid rgb(255,101,71);
-    background-color: rgb(255,101,71,0.6);
+button:hover {
+    border: 3px solid rgb(255, 101, 71);
+    background-color: rgb(255, 101, 71,0.6);
     color: white;
 }
