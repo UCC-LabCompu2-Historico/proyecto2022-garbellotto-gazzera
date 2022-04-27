@@ -9,26 +9,15 @@ h1 {
     line-height: 80%;
 }
 #formulario_dificultad{
-    width: 40%;
-    height: 200px;
+    width: 400px;
+    height: 155px;
     background: rgba(252, 159, 140, 0.6);
+    text-align: center;
+    line-height: 45px;
     border: 3px solid rgb(255, 101, 71);
-    display: grid;
-    
-}
-#dificultad{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: rgb(66, 66, 66);
-    text-align: center;
-    line-height: 65px;
-}
-#tiempo-vida{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: rgb(66, 66, 66);
-    text-align: center;
-    line-height: 65px;
 }
 
 body{
