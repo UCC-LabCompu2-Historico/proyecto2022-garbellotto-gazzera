@@ -20,120 +20,146 @@
 
     <nav>
         <div id="div1">
-            <h2 id="dificultad"><label for="dificultad">Dificultad</label></h2>
+            <h2 id="dificultad"><label class="texto" for="dificultad">Dificultad | ------</label></h2>
         </div>
         <div id="div2" class="div">
-            <h3 id="tiempo"><label for="tiempo">Tiempo | 00/00</label></h3>
+            <h3 id="tiempo"><label class="texto" for="tiempo">Tiempo | 00/00</label></h3>
         </div>
         <div id="div3" class="div">
-            <h3 id="vidas"><label for="vidas">Vidas | --</label></h3>
+            <h3 id="vidas"><label class="texto" for="vidas">Vidas | --</label></h3>
         </div>
     </nav>
 
     <div class="clearfix"></div>
 
     <section>
-        <table id="tablero" align="center">
-            <tr id="f1" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f2" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f3" class="borde_fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f4" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f5" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f6" class="borde_fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f7" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f8" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-            <tr id="f9" class="fila">
-                <td id="c1"></td>
-                <td id="c2"></td>
-                <td id="c3" class="borde_derecho"></td>
-                <td id="c4"></td>
-                <td id="c5"></td>
-                <td id="c6" class="borde_derecho"></td>
-                <td id="c7"></td>
-                <td id="c8"></td>
-                <td id="c9"></td>
-            </tr>
-        </table>
+        <div id="borde_tablero" class="tablero">
+            <table id="tablero" align="center">
+                <tr id="f1" class="fila">
+                    <td id="c1"></td>
+                    <td class="borde_1" id="c2"></td>
+                    <td class="borde_1_derecho" id="c3"></td>
+                    <td class="borde_1" id="c4"></td>
+                    <td class="borde_1" id="c5"></td>
+                    <td class="borde_1_derecho" id="c6"></td>
+                    <td class="borde_1" id="c7"></td>
+                    <td class="borde_1" id="c8"></td>
+                    <td id="c9"></td>
+                </tr>
+                <tr id="f2" class="fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f3" class="borde_fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f4" class="fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f5" class="fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f6" class="borde_fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f7" class="fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f8" class="fila">
+                    <td class="borde" id="c1"></td>
+                    <td class="borde" id="c2"></td>
+                    <td class="borde_derecho" id="c3"></td>
+                    <td class="borde" id="c4"></td>
+                    <td class="borde" id="c5"></td>
+                    <td class="borde_derecho" id="c6"></td>
+                    <td class="borde" id="c7"></td>
+                    <td class="borde" id="c8"></td>
+                    <td class="borde" id="c9"></td>
+                </tr>
+                <tr id="f9" class="fila">
+                    <td id="c1"></td>
+                    <td class="borde_2" id="c2"></td>
+                    <td class="borde_2_derecho" id="c3"></td>
+                    <td class="borde_2" id="c4"></td>
+                    <td class="borde_2" id="c5"></td>
+                    <td class="borde_2_derecho" id="c6"></td>
+                    <td class="borde_2" id="c7"></td>
+                    <td class="borde_2" id="c8"></td>
+                    <td id="c9"></td>
+                </tr>
+            </table>
+        </div>
+    
+        <div id="botones" class="tablero">
+            <button><a href="">1</a></button>
+            <button><a href="">2</a></button>
+            <button><a href="">3</a></button>
+            <button><a href="">4</a></button>
+            <button><a href="">5</a></button>
+            <button><a href="">6</a></button>
+            <button><a href="">7</a></button>
+            <button><a href="">8</a></button>
+            <button><a href="">9</a></button>
+        </div>
     </section>
 </body>
 </html>
+<!--
+<table id="opciones" align="center">
+    <tr><td id="opf1">                                                  <label class="num" for="opc1">1</label></td></tr>
+    <tr><td id="opf2" class="opciones">                                 <label class="num" for="opc2">2</label></td></tr>
+    <tr class="borde_fila_opciones"><td id="opf3" class="opciones">     <label class="num" for="opc3">3</label></td></tr>
+    <tr><td id="opf4" class="opciones">                                 <label class="num" for="opc4">4</label></td></tr>
+    <tr><td id="opf5" class="opciones">                                 <label class="num" for="opc5">5</label></td></tr>
+    <tr class="borde_fila_opciones"><td id="opf6" class="opciones">     <label class="num" for="opc6">6</label></td></tr>
+    <tr><td id="opf7" class="opciones">                                 <label class="num" for="opc7">7</label></td></tr>
+    <tr><td id="opf8" class="opciones">                                 <label class="num" for="opc8">8</label></td></tr>
+    <tr><td id="opf9">                                                  <label class="num" for="opc9">9</label></td></tr>
+</table>
