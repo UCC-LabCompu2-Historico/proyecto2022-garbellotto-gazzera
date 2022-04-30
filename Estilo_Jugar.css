@@ -5,29 +5,30 @@ body{
 }
 
 h1 {
-    height: 25%;
+    height: 75px;
     width: 100%;
-    font-size: 80px;
+    background: rgb(71, 71, 71);
+    color: white;
+    font-size: 40px;
+    line-height: 75px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 80px;
-    color: rgb(255, 119, 92);
-    line-height: 80%;
+    font-family: 'Press Start 2P', cursive;
     text-shadow: 0px 1px 0px rgb(255, 101, 71), 0px 2px 0px rgb(219, 90, 64), 0px 3px 0px rgb(199, 79, 54), 0px 4px 0px rgb(180, 72, 50), 0px 5px 0px rgb(161, 72, 54), 0px 6px 0px rgb(143, 57, 40), 0px 7px 0px rgb(100, 38, 26), 0px 8px 7px rgb(0, 0, 0);
 }
 
 #formulario_dificultad{
     width: 500px;
     height: 70px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgb(66, 66, 66);
     text-align: center;
     line-height: 70px;
     border: 3px solid rgb(255, 101, 71);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     margin-top: 10%;
     transition: box-shadow 0.7s ease;
+    border-radius: 10px;
 }
 
 #formulario_dificultad:hover{
@@ -37,13 +38,13 @@ h1 {
 .dificultad{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     margin: 0px 20px;
     padding: 0px 10px;
 }
 
 .dificultad:hover{
-    background: rgb(255, 101, 71, 0.6);
+    background: rgba(253, 95, 64, 0.6);
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -55,48 +56,48 @@ input{
 input:checked + label{
     background: rgb(255, 101, 71, 0.6);
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 101, 71);
+    border: 3px solid rgb(255, 101, 71);
     border-radius: 5px;
 }
 
 #formulario_tiempo{
     width: 200px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgb(66, 66, 66);
     text-align: center;
     line-height: 45px;
     border: 3px solid rgb(255, 101, 71);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     margin-top: 3%;
     transition: box-shadow 0.7s ease;
     margin-left: 36.5%;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 #formulario_tiempo:hover{
-    background: rgb(255, 199, 178, 0.4);
+    background: rgba(66, 66, 66, 0.8);
     box-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
 }
 
 #formulario_vidas{
     width: 200px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgb(66, 66, 66);
     text-align: center;
     line-height: 45px;
     border: 3px solid rgb(255, 101, 71);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     margin-top: 3%;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: box-shadow 0.7s ease;
 }
 
 #formulario_vidas:hover{
-    background: rgb(255, 199, 178, 0.4);
+    background: rgba(66, 66, 66, 0.8);
     box-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
 }
 
