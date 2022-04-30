@@ -1,13 +1,23 @@
 h1 {
     height: 75px;
-    width: 100%;
+    width: 99%;
     background: rgb(71, 71, 71);
     color: white;
     font-size: 40px;
     line-height: 75px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    text-shadow: 0px 1px 0px rgb(255, 101, 71), 0px 2px 0px rgb(219, 90, 64), 0px 3px 0px rgb(199, 79, 54), 0px 4px 0px rgb(180, 72, 50), 0px 5px 0px rgb(161, 72, 54), 0px 6px 0px rgb(143, 57, 40), 0px 7px 0px rgb(100, 38, 26), 0px 8px 7px rgb(0, 0, 0);
+    text-shadow: 
+    0px 1px 0px rgb(255, 101, 71), 
+    0px 2px 0px rgb(219, 90, 64), 
+    0px 3px 0px rgb(199, 79, 54), 
+    0px 4px 0px rgb(180, 72, 50), 
+    0px 5px 0px rgb(161, 72, 54), 
+    0px 6px 0px rgb(143, 57, 40), 
+    0px 7px 0px rgb(100, 38, 26), 
+    0px 8px 7px rgb(0, 0, 0);
+    position: fixed;
+    top: 10px;
 }
 
 body{
@@ -17,7 +27,13 @@ body{
 }
 
 #imagen{
-    margin-top: 7%;
+    margin-top: 15%;
+    border: 2px solid rgb(255, 158, 123);
+    border-radius: 7px;
+    box-shadow: 
+    0 0 3px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139), 
+    0 0 7px rgb(255, 170, 139);
 }
 
 a:visited, a:link{
@@ -36,7 +52,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 15px 2px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -48,5 +64,8 @@ button {
 button:hover {
     background-color: rgba(255, 102, 71, 0.85);
     border: 3px solid rgb(255, 101, 71);
-    box-shadow: 0 0 3px rgb(255, 170, 139), 0 0 5px rgb(255, 170, 139), 0 0 5px rgb(255, 170, 139);
+    box-shadow: 
+    0 0 3px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139);
 }
