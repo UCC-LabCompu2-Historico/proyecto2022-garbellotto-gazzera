@@ -7,51 +7,50 @@
     <meta content="Tomas Garbellotto" name="autor">
     <meta content="Juego Sudoku" name="descripcion">
     <meta content="sudoku, juego, entretenimiento" name="palabras-principales">
-    <link rel="stylesheet" href="Estilo_Jugar.css" type="text/css">
+    <link rel="stylesheet" href="Estilo.css" type="text/css">
     <link rel="shortcut icon" href="imagenes/favicon-sudoku.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
-<body>
-<header>
-    <h1>SUDOKU</h1>
-</header>
-<div align="center">
-    <form>
-        <p id="formulario_dificultad">
-            <label for="dificultad"><b>Dificultad: </b></label> 
-                <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label class="dificultad" for="radio_facil">Facil</label>
-                <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label class="dificultad" for="radio_normal">Normal</label>
-                <input type="radio" name="dificultad" value="dificil" id="radio_dificil"> <label class="dificultad" for="radio_dificil">Dificil</label>
+<body id="body">
+    <header>
+        <h1>SUDOKU</h1>
+    </header>
+    <div id="formulario" align="center">
+        <form>
+            <p id="formulario_dificultad">
+                <label for="dificultad"><b>Dificultad: </b></label> 
+                    <input type="radio" name="dificultad" value="facil" id="radio_facil"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
+                    <input type="radio" name="dificultad" value="normal" id="radio_normal"> <label class="formulario_dificultad" for="radio_normal">Normal</label>
+                    <input type="radio" name="dificultad" value="dificil" id="radio_dificil"> <label class="formulario_dificultad" for="radio_dificil">Dificil</label>
+            </p>
+            <p id="formulario_tiempo" class="p_tiempo_vidas">
+                <label for="tiempo"><b>Tiempo: </b></label>
+                <select name="tiempo" class="select_tiempo_vidas">
+                    <option value="ilimitado"><label for="ilimitado">Ilimitado</label></option>
+                    <option value="10_min"><label for="10_min">10 min</label></option>
+                    <option value="15_min"><label for="15_min">15 min</label></option>
+                    <option value="20_min"><label for="20_min">20 min</label></option>
+                    <option value="25_min"><label for="25_min">25 min</label></option>
+                </select>
+            </p>
+            <p id="formulario_vidas" class="p_tiempo_vidas">
+                <label for="vidas"><b>Vidas: </b></label>
+                <select name="vidas" class="select_tiempo_vidas">
+                    <option value="ilimitado"><label for="ilimitado">Ilimitado</label></option>
+                    <option value="5"><label for="5">5</label></option>
+                    <option value="10"><label for="10">10</label></option>
+                    <option value="15"><label for="15">15</label></option>
+                </select>
+            </p>
+        </form>
+    </div>
+    <div>
+        <p>
+            <button id="botonJugar" class="boton"><a class="a" href="jugar-2.html">Siguiente</a></button>
+            <button id="botonJugar" class="boton"><a class="a" href="index.html">Volver a Inicio</a></button>
         </p>
-        <p id="formulario_tiempo" class="formulario">
-            <label for="tiempo"><b>Tiempo: </b></label>
-            <select name="tiempo" id="tiempo">
-                <option value="ilimitado"><label class="tiempo" for="ilimitado">Ilimitado</label></option>
-                <option value="10_min"><label class="tiempo" for="10_min">10 min</label></option>
-                <option value="15_min"><label class="tiempo" for="15_min">15 min</label></option>
-                <option value="20_min"><label class="tiempo" for="20_min">20 min</label></option>
-                <option value="25_min"><label class="tiempo" for="25_min">25 min</label></option>
-            </select>
-        </p>
-        <p id="formulario_vidas" class="formulario">
-            <label for="vidas"><b>Vidas: </b></label>
-            <select name="vidas" id="vidas">
-                <option value="ilimitado"> Ilimitado</option>
-                <option value="5"> 5</option>
-                <option value="10"> 10</option>
-                <option value="15"> 15</option>
-            </select>
-        </p>
-        <p class="clearfix"></p>
-    </form>
-</div>
-<div>
-    <p>
-        <button><a href="jugar-2.html">Siguiente</a></button>
-        <button><a href="index.html">Volver a Inicio</a></button>
-    </p>
-</div>
+    </div>
 </body>
 </html>

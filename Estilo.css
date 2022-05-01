@@ -1,0 +1,409 @@
+/*Estilo General*/
+
+h1{
+    height: 75px;
+    width: 99%;
+    background: rgb(71, 71, 71);
+    color: white;
+    font-size: 40px;
+    line-height: 75px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 
+    0px 1px 0px rgb(255, 101, 71), 
+    0px 2px 0px rgb(219, 90, 64), 
+    0px 3px 0px rgb(199, 79, 54), 
+    0px 4px 0px rgb(180, 72, 50), 
+    0px 5px 0px rgb(161, 72, 54), 
+    0px 6px 0px rgb(143, 57, 40), 
+    0px 7px 0px rgb(100, 38, 26), 
+    0px 8px 7px rgb(0, 0, 0);
+    position: fixed;
+    top: 10px;
+}
+
+body{
+    text-align: center;  
+}
+
+.clearfix{
+    clear: both;
+}
+
+#body{
+    background: url(imagenes/fondo_gris.png);
+}
+
+.a:visited, .a:link{
+    color: rgb(66, 66, 66);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton{
+    padding: 16px 32px;
+    display: inline-block;
+    margin: 4px 2px;
+    width: 180px;
+}
+
+/*Estilo General*/
+
+/*Estilo Index*/
+
+#index{
+    background: url(imagenes/fondo_con_movimiento.gif);
+}
+
+.aIndex:visited, .aIndex:link{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#botonIndex{
+    background-color: rgb(71, 71, 71);
+    border: 2px solid rgb(255, 101, 71);
+}
+
+#botonIndex:hover{
+    background-color: rgb(255, 101, 71,0.6);
+    border: 3px solid rgb(255, 101, 71);
+    box-shadow: 
+    0 0 3px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139);
+}
+
+#imagen{
+    margin-top: 15%;
+    border: 2px solid rgb(255, 158, 123);
+    border-radius: 7px;
+    box-shadow: 
+    0 0 3px rgb(255, 170, 139), 
+    0 0 5px rgb(255, 170, 139), 
+    0 0 7px rgb(255, 170, 139);
+}
+
+/*Estilo Index*/
+
+/*Estilo Como Jugar*/
+
+#botonComoJugar{
+    background-color: white; 
+    color: rgb(255, 101, 71);
+    border: 2px solid rgb(150, 150, 150);
+}
+
+#botonComoJugar:hover{
+    background-color: rgb(255, 101, 71,0.6);
+    border: 3px solid rgb(255, 101, 71);
+    color: white;
+}
+
+/*Estilo Como Jugar*/
+
+/*Estilo Jugar*/
+
+#botonJugar{
+    background-color: white; 
+    color: rgb(255, 101, 71);
+    border: 2px solid rgb(255, 101, 71);
+}
+
+#botonJugar:hover{
+    background-color: rgb(255, 101, 71,0.6);
+    border: 3px solid rgb(255, 101, 71);
+    color: white;
+}
+
+#formulario{
+    margin-bottom: 200px;
+}
+
+#formulario_dificultad{
+    background: rgb(66, 66, 66);
+    text-align: center;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: box-shadow 0.7s ease;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 15%;
+}
+
+#formulario_dificultad:hover{
+    box-shadow: 
+    0 0 10px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139);
+}
+
+.formulario_dificultad{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0px 20px;
+    padding: 0px 10px;
+}
+
+.formulario_dificultad:hover{
+    background: rgba(253, 95, 64, 0.6);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    background: rgb(255, 101, 71, 0.6);
+    color: rgb(255, 255, 255);
+    border: 3px solid rgb(255, 101, 71);
+    border-radius: 5px;
+}
+
+#formulario_tiempo{
+    width: 200px;
+    height: 50px;
+    background: rgb(66, 66, 66);
+    text-align: center;
+    line-height: 45px;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 3%;
+    transition: box-shadow 0.7s ease;
+    border-radius: 15px;
+    position: absolute;
+    left: 35%;
+}
+
+#formulario_tiempo:hover{
+    box-shadow: 
+    0 0 10px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139);
+}
+
+#formulario_vidas{
+    width: 200px;
+    height: 50px;
+    background: rgb(66, 66, 66);
+    text-align: center;
+    line-height: 45px;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 3%;
+    border-radius: 15px;
+    transition: box-shadow 0.7s ease;
+    position: absolute;
+    left: 55%;
+}
+
+#formulario_vidas:hover{
+    box-shadow: 
+    0 0 10px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139), 
+    0 0 20px rgb(255, 170, 139);
+}
+
+.p_tiempo_vidas{
+    float: left;
+}
+
+.select_tiempo_vidas{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(66, 66, 66);
+    background: rgba(252, 159, 140, 0.6);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 101, 71);
+    font-weight: bold;
+}
+
+.select_tiempo_vidas:checked + label{
+    border-radius: 5px;
+    border: 2px solid rgb(255, 101, 71);
+}
+
+/*Estilo Jugar*/
+
+/*Estilo Jugar 2*/
+
+#botonJugar_2{
+    background-color: white; 
+    color: rgb(255, 101, 71);
+    border: 2px solid rgb(150, 150, 150);
+}
+
+.botonesTablero{
+    background-color: white; 
+    color: rgb(255, 101, 71);
+    border: 2px solid rgb(255, 101, 71);
+    display: block;  
+    height: 45px;
+    width: 45px;
+    margin-bottom: 3.8px;
+}
+
+#botonJugar_2:hover{
+    background-color: rgb(255, 101, 71,0.6);
+    border: 3px solid rgb(255, 101, 71);
+    color: white;
+}
+
+.botonesTablero:hover{
+    color: white;
+}
+
+.divTiempoVidas{
+    float: left;
+    margin-bottom: 30px;
+}
+
+#dificultad{
+    height: 45px;
+    width: 200px;
+    line-height: 45px;
+    background: rgb(185, 185, 185);
+    text-align: center;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#tiempo{
+    height: 45px;
+    width: 200px;
+    line-height: 45px;
+    background: rgb(185, 185, 185);
+    text-align: center;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#vidas{
+    height: 45px;
+    width: 200px;
+    line-height: 45px;
+    background: rgb(185, 185, 185);
+    text-align: center;
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#divDificultad{
+    margin-top: 5%;
+    margin-left: 44%;
+}
+
+#divTiempo{
+    margin-left: 22%;
+}
+
+#divVidas{
+    margin-left: 34%;
+}
+
+.dificultad_tiempo_vidas{
+    text-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
+}
+
+#section_Jugar_2{
+    position: relative;
+}
+
+tr{
+    height: 45px;
+    width: 405px;
+}
+
+td{
+    height: 45px;
+    width: 45px;
+}
+
+#tablero{
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 405px;
+    height: 405px;
+    background-image: url(imagenes/fondo_tablero.png);
+}
+
+.tablero{
+    display: inline-block;
+}
+
+#borde_tablero{
+    border: 1px solid rgb(71, 71, 71);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.borde{
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.borde_1{
+    border: 1px solid rgb(71, 71, 71);
+    border-top: 0px;
+}
+
+.borde_2{
+    border: 1px solid rgb(71, 71, 71);
+    border-bottom: 0px;
+}
+
+#c1{
+    border-left: 0px;
+}
+
+#c9{
+    border-right: 0px;
+}
+
+.borde_derecho{
+    border: 1px solid rgb(71, 71, 71);
+    border-right: 3px solid rgb(71, 71, 71);
+}
+
+.borde_1_derecho{
+    border: 1px solid rgb(71, 71, 71);
+    border-top: 0px;
+    border-right: 3px solid rgb(71, 71, 71);
+}
+
+.borde_2_derecho{
+    border: 1px solid rgb(71, 71, 71);
+    border-bottom: 0px;
+    border-right: 3px solid rgb(71, 71, 71);
+}
+
+.borde_fila{
+    border-bottom: 3px solid rgb(71, 71, 71);
+}
+
+#botones{
+    height: 435px;
+    position: absolute;
+    top: 0px;
+}
+
+/*Estilo Jugar 2*/
