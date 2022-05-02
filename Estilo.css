@@ -255,7 +255,7 @@ input:checked + label{
 #botonJugar_2{
     background-color: white; 
     color: rgb(255, 101, 71);
-    border: 2px solid rgb(150, 150, 150);
+    border: 2px solid rgb(255, 101, 71);
 }
 
 .botonesTablero{
@@ -275,6 +275,7 @@ input:checked + label{
 }
 
 .botonesTablero:hover{
+    background-color: rgb(255, 101, 71,0.6);
     color: white;
 }
 
