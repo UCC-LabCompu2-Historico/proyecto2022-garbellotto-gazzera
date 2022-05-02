@@ -1,15 +1,17 @@
 /*Estilo General*/
 
-header{
+header {
     height: 75px;
     width: 100%;
     background: rgb(71, 71, 71);
     position: fixed;
     top: 0px;
     left: 0px;
+    border: 3px solid rgb(255, 101, 71);
+    width: 99%;
 }
 
-h1{
+h1 {
     height: 75px;
     width: 100%;
     background: rgb(71, 71, 71);
@@ -18,40 +20,42 @@ h1{
     line-height: 40px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    text-shadow: 
-    0px 1px 0px rgb(255, 101, 71), 
-    0px 2px 0px rgb(219, 90, 64), 
-    0px 3px 0px rgb(199, 79, 54), 
-    0px 4px 0px rgb(180, 72, 50), 
-    0px 5px 0px rgb(161, 72, 54), 
-    0px 6px 0px rgb(143, 57, 40), 
-    0px 7px 0px rgb(100, 38, 26), 
+    text-shadow: 0px 1px 0px rgb(255, 101, 71),
+    0px 2px 0px rgb(219, 90, 64),
+    0px 3px 0px rgb(199, 79, 54),
+    0px 4px 0px rgb(180, 72, 50),
+    0px 5px 0px rgb(161, 72, 54),
+    0px 6px 0px rgb(143, 57, 40),
+    0px 7px 0px rgb(100, 38, 26),
     0px 8px 7px rgb(0, 0, 0);
     position: fixed;
     top: 0px;
     left: 0px;
+    border: 3px solid rgb(255, 101, 71);
+    border-top: 0px;
+    width: 99%;
 }
 
-body{
+body {
     text-align: center;
 }
 
-.clearfix{
+.clearfix {
     clear: both;
 }
 
-#body{
+#body {
     background: url(imagenes/fondo_gris.png);
 }
 
-.a:visited, .a:link{
+.a:visited, .a:link {
     color: rgb(66, 66, 66);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-.boton{
+.boton {
     padding: 16px 32px;
     display: inline-block;
     margin: 4px 2px;
@@ -62,39 +66,37 @@ body{
 
 /*Estilo Index*/
 
-#index{
+#index {
     background: url(imagenes/fondo_con_movimiento.gif);
 }
 
-.aIndex:visited, .aIndex:link{
+.aIndex:visited, .aIndex:link {
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 
-#botonIndex{
+#botonIndex {
     margin-top: 30%;
     background-color: rgb(71, 71, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonIndex:hover{
-    background-color: rgb(255, 101, 71,0.6);
+#botonIndex:hover {
+    background-color: rgb(255, 101, 71, 0.6);
     border: 3px solid rgb(255, 101, 71);
-    box-shadow: 
-    0 0 3px rgb(255, 170, 139), 
-    0 0 5px rgb(255, 170, 139), 
+    box-shadow: 0 0 3px rgb(255, 170, 139),
+    0 0 5px rgb(255, 170, 139),
     0 0 5px rgb(255, 170, 139);
 }
 
-#imagen{
+#imagen {
     margin-top: 15%;
     border: 2px solid rgb(255, 158, 123);
     border-radius: 7px;
-    box-shadow: 
-    0 0 3px rgb(255, 170, 139), 
-    0 0 5px rgb(255, 170, 139), 
+    box-shadow: 0 0 3px rgb(255, 170, 139),
+    0 0 5px rgb(255, 170, 139),
     0 0 7px rgb(255, 170, 139);
 }
 
@@ -102,27 +104,27 @@ body{
 
 /*Estilo Como Jugar*/
 
-#explicativo{
+#explicativo {
     padding-top: 5rem;
     font-family: 'Lato', sans-serif;
     font-size: 17px;
 }
 
-#video{
+#video {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    background-color: rgb(255, 101, 71,0.6);
+    background-color: rgb(255, 101, 71, 0.6);
     border: 3px solid rgb(255, 101, 71);
 }
 
-#botonComoJugar{
-    background-color: white; 
+#botonComoJugar {
+    background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(150, 150, 150);
 }
 
-#botonComoJugar:hover{
-    background-color: rgb(255, 101, 71,0.6);
+#botonComoJugar:hover {
+    background-color: rgb(255, 101, 71, 0.6);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
@@ -131,23 +133,23 @@ body{
 
 /*Estilo Jugar*/
 
-#botonJugar{
-    background-color: white; 
+#botonJugar {
+    background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonJugar:hover{
-    background-color: rgb(255, 101, 71,0.6);
+#botonJugar:hover {
+    background-color: rgb(255, 101, 71, 0.6);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
 
-#formulario{
+#formulario {
     margin-bottom: 200px;
 }
 
-#formulario_dificultad{
+#formulario_dificultad {
     background: rgb(66, 66, 66);
     text-align: center;
     border: 3px solid rgb(255, 101, 71);
@@ -162,14 +164,13 @@ body{
     margin-top: 15%;
 }
 
-#formulario_dificultad:hover{
-    box-shadow: 
-    0 0 10px rgb(255, 170, 139), 
-    0 0 20px rgb(255, 170, 139), 
+#formulario_dificultad:hover {
+    box-shadow: 0 0 10px rgb(255, 170, 139),
+    0 0 20px rgb(255, 170, 139),
     0 0 20px rgb(255, 170, 139);
 }
 
-.formulario_dificultad{
+.formulario_dificultad {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
@@ -177,24 +178,24 @@ body{
     padding: 0px 10px;
 }
 
-.formulario_dificultad:hover{
+.formulario_dificultad:hover {
     background: rgba(253, 95, 64, 0.6);
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
 
-input{
+input {
     display: none;
 }
 
-input:checked + label{
+input:checked + label {
     background: rgb(255, 101, 71, 0.6);
     color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 101, 71);
     border-radius: 5px;
 }
 
-#formulario_tiempo{
+#formulario_tiempo {
     width: 200px;
     height: 50px;
     background: rgb(66, 66, 66);
@@ -211,14 +212,13 @@ input:checked + label{
     left: 35%;
 }
 
-#formulario_tiempo:hover{
-    box-shadow: 
-    0 0 10px rgb(255, 170, 139), 
-    0 0 20px rgb(255, 170, 139), 
+#formulario_tiempo:hover {
+    box-shadow: 0 0 10px rgb(255, 170, 139),
+    0 0 20px rgb(255, 170, 139),
     0 0 20px rgb(255, 170, 139);
 }
 
-#formulario_vidas{
+#formulario_vidas {
     width: 200px;
     height: 50px;
     background: rgb(66, 66, 66);
@@ -235,18 +235,17 @@ input:checked + label{
     left: 55%;
 }
 
-#formulario_vidas:hover{
-    box-shadow: 
-    0 0 10px rgb(255, 170, 139), 
-    0 0 20px rgb(255, 170, 139), 
+#formulario_vidas:hover {
+    box-shadow: 0 0 10px rgb(255, 170, 139),
+    0 0 20px rgb(255, 170, 139),
     0 0 20px rgb(255, 170, 139);
 }
 
-.p_tiempo_vidas{
+.p_tiempo_vidas {
     float: left;
 }
 
-.select_tiempo_vidas{
+.select_tiempo_vidas {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(66, 66, 66);
@@ -256,7 +255,7 @@ input:checked + label{
     font-weight: bold;
 }
 
-.select_tiempo_vidas:checked + label{
+.select_tiempo_vidas:checked + label {
     border-radius: 5px;
     border: 2px solid rgb(255, 101, 71);
 }
@@ -265,39 +264,39 @@ input:checked + label{
 
 /*Estilo Jugar 2*/
 
-#botonJugar_2{
-    background-color: white; 
+#botonJugar_2 {
+    background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-.botonesTablero{
-    background-color: white; 
+.botonesTablero {
+    background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
-    display: block;  
+    display: block;
     height: 45px;
     width: 45px;
     margin-bottom: 3.8px;
 }
 
-#botonJugar_2:hover{
-    background-color: rgb(255, 101, 71,0.6);
+#botonJugar_2:hover {
+    background-color: rgb(255, 101, 71, 0.6);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
 
-.botonesTablero:hover{
-    background-color: rgb(255, 101, 71,0.6);
+.botonesTablero:hover {
+    background-color: rgb(255, 101, 71, 0.6);
     color: white;
 }
 
-.divTiempoVidas{
+.divTiempoVidas {
     float: left;
     margin-bottom: 30px;
 }
 
-#dificultad{
+#dificultad {
     height: 45px;
     width: 200px;
     line-height: 45px;
@@ -309,7 +308,7 @@ input:checked + label{
     color: rgb(255, 255, 255);
 }
 
-#tiempo{
+#tiempo {
     height: 45px;
     width: 200px;
     line-height: 45px;
@@ -321,7 +320,7 @@ input:checked + label{
     color: rgb(255, 255, 255);
 }
 
-#vidas{
+#vidas {
     height: 45px;
     width: 200px;
     line-height: 45px;
@@ -333,38 +332,38 @@ input:checked + label{
     color: rgb(255, 255, 255);
 }
 
-#divDificultad{
+#divDificultad {
     margin-top: 5%;
     margin-left: 44%;
 }
 
-#divTiempo{
+#divTiempo {
     margin-left: 22%;
 }
 
-#divVidas{
+#divVidas {
     margin-left: 34%;
 }
 
-.dificultad_tiempo_vidas{
+.dificultad_tiempo_vidas {
     text-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
 }
 
-#section_Jugar_2{
+#section_Jugar_2 {
     position: relative;
 }
 
-tr{
+tr {
     height: 45px;
     width: 405px;
 }
 
-td{
+td {
     height: 45px;
     width: 45px;
 }
 
-#tablero{
+#tablero {
     border-collapse: collapse;
     border-radius: 10px;
     width: 405px;
@@ -372,60 +371,60 @@ td{
     background-image: url(imagenes/fondo_tablero.png);
 }
 
-.tablero{
+.tablero {
     display: inline-block;
 }
 
-#borde_tablero{
+#borde_tablero {
     border: 1px solid rgb(71, 71, 71);
     border-radius: 10px;
     margin-right: 20px;
 }
 
-.borde{
+.borde {
     border: 1px solid rgb(71, 71, 71);
 }
 
-.borde_1{
+.borde_1 {
     border: 1px solid rgb(71, 71, 71);
     border-top: 0px;
 }
 
-.borde_2{
+.borde_2 {
     border: 1px solid rgb(71, 71, 71);
     border-bottom: 0px;
 }
 
-#c1{
+#c1 {
     border-left: 0px;
 }
 
-#c9{
+#c9 {
     border-right: 0px;
 }
 
-.borde_derecho{
+.borde_derecho {
     border: 1px solid rgb(71, 71, 71);
     border-right: 3px solid rgb(71, 71, 71);
 }
 
-.borde_1_derecho{
+.borde_1_derecho {
     border: 1px solid rgb(71, 71, 71);
     border-top: 0px;
     border-right: 3px solid rgb(71, 71, 71);
 }
 
-.borde_2_derecho{
+.borde_2_derecho {
     border: 1px solid rgb(71, 71, 71);
     border-bottom: 0px;
     border-right: 3px solid rgb(71, 71, 71);
 }
 
-.borde_fila{
+.borde_fila {
     border-bottom: 3px solid rgb(71, 71, 71);
 }
 
-#botones{
+#botones {
     height: 435px;
     position: absolute;
     top: 0px;
