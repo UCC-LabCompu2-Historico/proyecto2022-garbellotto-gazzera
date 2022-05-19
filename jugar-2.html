@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Funciones.js"></script>
 </head>
-<body id="body">
+<body id="body" onload="CrearSudoku()">
 <header>
     <h1>SUDOKU</h1>
 </header>
@@ -37,117 +38,117 @@
     <div id="borde_tablero" class="tablero">
         <table id="tablero" align="center">
             <tr id="f1" class="fila">
-                <td id="c1"></td>
-                <td class="borde_1" id="c2"></td>
-                <td class="borde_1_derecho" id="c3"></td>
-                <td class="borde_1" id="c4"></td>
-                <td class="borde_1" id="c5"></td>
-                <td class="borde_1_derecho" id="c6"></td>
-                <td class="borde_1" id="c7"></td>
-                <td class="borde_1" id="c8"></td>
-                <td id="c9"></td>
+                <td><input class="celda" disabled></td>
+                <td class="borde_1"><input class="celda" disabled></td>
+                <td class="borde_1_derecho"><input class="celda" disabled></td>
+                <td class="borde_1"><input class="celda" disabled></td>
+                <td class="borde_1"><input class="celda" disabled></td>
+                <td class="borde_1_derecho"><input class="celda" disabled></td>
+                <td class="borde_1"><input class="celda" disabled></td>
+                <td class="borde_1"><input class="celda" disabled></td>
+                <td><input id="9" class="celda" disabled></td>
             </tr>
             <tr id="f2" class="fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f3" class="borde_fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f4" class="fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f5" class="fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f6" class="borde_fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f7" class="fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde_derecho"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
+                <td class="borde"><input class="celda" disabled></td>
             </tr>
             <tr id="f8" class="fila">
-                <td class="borde" id="c1"></td>
-                <td class="borde" id="c2"></td>
-                <td class="borde_derecho" id="c3"></td>
-                <td class="borde" id="c4"></td>
-                <td class="borde" id="c5"></td>
-                <td class="borde_derecho" id="c6"></td>
-                <td class="borde" id="c7"></td>
-                <td class="borde" id="c8"></td>
-                <td class="borde" id="c9"></td>
+                <td class="borde" id="c1f8"><input class="celda" disabled></td>
+                <td class="borde" id="c2f8"><input class="celda" disabled></td>
+                <td class="borde_derecho" id="c3f8"><input class="celda" disabled></td>
+                <td class="borde" id="c4f8"><input class="celda" disabled></td>
+                <td class="borde" id="c5f8"><input class="celda" disabled></td>
+                <td class="borde_derecho" id="c6f8"><input class="celda" disabled></td>
+                <td class="borde" id="c7f8"><input class="celda" disabled></td>
+                <td class="borde" id="c8f8"><input class="celda" disabled></td>
+                <td class="borde" id="c9f8"><input class="celda" disabled></td>
             </tr>
             <tr id="f9" class="fila">
-                <td id="c1"></td>
-                <td class="borde_2" id="c2"></td>
-                <td class="borde_2_derecho" id="c3"></td>
-                <td class="borde_2" id="c4"></td>
-                <td class="borde_2" id="c5"></td>
-                <td class="borde_2_derecho" id="c6"></td>
-                <td class="borde_2" id="c7"></td>
-                <td class="borde_2" id="c8"></td>
-                <td id="c9"></td>
+                <td><input class="celda" disabled></td>
+                <td class="borde_2"><input class="celda" disabled></td>
+                <td class="borde_2_derecho"><input class="celda" disabled></td>
+                <td class="borde_2"><input class="celda" disabled></td>
+                <td class="borde_2"><input class="celda" disabled></td>
+                <td class="borde_2_derecho"><input class="celda" disabled></td>
+                <td class="borde_2"><input class="celda" disabled></td>
+                <td class="borde_2"><input class="celda" disabled></td>
+                <td><input class="celda" disabled></td>
             </tr>
         </table>
     </div>
 
     <div id="botones" class="tablero">
-        <button class="botonesTablero"><a class="a" href="">1</a></button>
-        <button class="botonesTablero"><a class="a" href="">2</a></button>
-        <button class="botonesTablero"><a class="a" href="">3</a></button>
-        <button class="botonesTablero"><a class="a" href="">4</a></button>
-        <button class="botonesTablero"><a class="a" href="">5</a></button>
-        <button class="botonesTablero"><a class="a" href="">6</a></button>
-        <button class="botonesTablero"><a class="a" href="">7</a></button>
-        <button class="botonesTablero"><a class="a" href="">8</a></button>
-        <button class="botonesTablero"><a class="a" href="">9</a></button>
+        <button class="botonesTablero" onclick="Tablero(1)"><a class="a" href="">1</a></button>
+        <button class="botonesTablero" onclick="Tablero(2)"><a class="a" href="">2</a></button>
+        <button class="botonesTablero" onclick="Tablero(3)"><a class="a" href="">3</a></button>
+        <button class="botonesTablero" onclick="Tablero(4)"><a class="a" href="">4</a></button>
+        <button class="botonesTablero" onclick="Tablero(5)"><a class="a" href="">5</a></button>
+        <button class="botonesTablero" onclick="Tablero(6)"><a class="a" href="">6</a></button>
+        <button class="botonesTablero" onclick="Tablero(7)"><a class="a" href="">7</a></button>
+        <button class="botonesTablero" onclick="Tablero(8)"><a class="a" href="">8</a></button>
+        <button class="botonesTablero" onclick="Tablero(9)"><a class="a" href="">9</a></button>
     </div>
 </section>
 <br>

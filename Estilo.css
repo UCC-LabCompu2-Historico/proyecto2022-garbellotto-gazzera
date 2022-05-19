@@ -184,11 +184,11 @@ body {
     border-radius: 5px;
 }
 
-input {
+.input {
     display: none;
 }
 
-input:checked + label {
+.input:checked + label {
     background: rgb(255, 101, 71, 0.6);
     color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 101, 71);
@@ -428,6 +428,19 @@ td {
     height: 435px;
     position: absolute;
     top: 0px;
+}
+
+.celda{
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0px;
+    color: #0000FF;
+    font-family: Verdana;
 }
 
 /*Estilo Jugar 2*/
