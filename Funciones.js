@@ -6,13 +6,10 @@
  * @return Valor que retorna
  */
 
-function Dificultad(Dificultad) {
-    alert(Dificultad);
-    /*var dificultad, n;
+function Dificultad() {
+    var dificultad;
     dificultad = document.getElementById("radio_facil").value;
-    localStorage.setItem("Dificultad", dificultad);
-    n = localStorage.getItem("Dificultad");
-    alert(n);*/
+    localStorage.setItem("dificultad", Dificultad);
 }
 
 function CrearSudoku(){
@@ -21,9 +18,16 @@ function CrearSudoku(){
     CuadranteFila=0, CuadranteColumna=0, 
     Contador=0, MismaPosicion=0, Random, num1, num2=0, dificultad;
     var Filas=9,Columnas=9;
-    var Tablero = new Array();
-    dificultad = localStorage.getItem("dificultad");
-    alert(dificultad);
+    var Tablero = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],
+                   [0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],
+                   [0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
+    dificultad = localStorage.getItem("Dificultad");
+    console.log(Math.floor(Math.Random() * (10-1)) + 1;);
+    
+    alert(Contador);
+    Contador =  Math.floor(Math.Random() * (10-1)) + 1;
+
+    
 
     do
     {
@@ -32,9 +36,9 @@ function CrearSudoku(){
             Contador += 1;
             if (Contador > 25)
             {
-                for (var i = 0; i < Filas; i++)
+                for (let i = 0; i < Filas; i++)
                 {
-                    for (var j = 0; j < Columnas; j++)
+                    for (let j = 0; j < Columnas; j++)
                     {
                         Tablero[i][j] = 0;
                         PosicionFila = 0;
@@ -52,14 +56,14 @@ function CrearSudoku(){
         }
 
         MismaPosicion = PosicionFila + PosicionColumna;
-        
-        Tablero[PosicionFila][PosicionColumna] = 1 + rand()%(9);
+
+        Tablero[PosicionFila][PosicionColumna] = Math.floor(Math.Random () * 10) + 1;
 
         ComprobarNumero = Tablero[PosicionFila][PosicionColumna];
 
-        for (var i = CuadranteFila; i < CuadranteFila + 3; i++)
+        for (let i = CuadranteFila; i < CuadranteFila + 3; i++)
         {
-            for (var j = CuadranteColumna; j < CuadranteColumna + 3; j++)
+            for (let j = CuadranteColumna; j < CuadranteColumna + 3; j++)
             {   
                 if (ComprobarNumero == Tablero[i][j])
                 {
@@ -75,7 +79,7 @@ function CrearSudoku(){
         }
         if (ComprobarNumero > 0)
         {
-            for (var i = 0; i < Columnas; i++)
+            for (let i = 0; i < Columnas; i++)
             {
                 if (ComprobarNumero == Tablero[PosicionFila][i])
                 {
@@ -90,7 +94,7 @@ function CrearSudoku(){
         }
         if (ComprobarNumero > 0)
         {
-            for (var i = 0; i < Filas; i++)
+            for (let i = 0; i < Filas; i++)
             {
                 if (ComprobarNumero == Tablero[i][PosicionColumna])
                 {
@@ -141,9 +145,9 @@ function CrearSudoku(){
         }
     }
     
-    for (var i = 0; i < Filas; i++)
+    for (let i = 0; i < Filas; i++)
     {
-        for (var j = 0; j < dificultad; j++)
+        for (let j = 0; j < dificultad; j++)
         {
             Random = 1 + rand() % (9);
             if (Tablero[i][Random] == 0)
@@ -157,9 +161,9 @@ function CrearSudoku(){
         }
     }
 
-    for (var i = 0; i < Filas; i++)
+    for (let i = 0; i < Filas; i++)
     {
-        for (var j = 0; j < Columnas; j++)
+        for (let j = 0; j < Columnas; j++)
         {
             if (num2 < i) {
                 num2 = i;
