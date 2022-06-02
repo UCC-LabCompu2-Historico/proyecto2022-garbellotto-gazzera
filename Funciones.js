@@ -8,22 +8,24 @@
 
 function Dificultad() {
     var dificultad;
-    dificultad = document.getElementById("radio_facil").value;
+    dificultad = document.getElementById('radio_facil').value;
     localStorage.setItem("dificultad", Dificultad);
 }
 
 function CrearSudoku(){
-    var ComprobarNumero=0, 
+    dificultad = localStorage.getItem("dificultad");
+    alert(dificultad);
+
+    /*var ComprobarNumero=0, 
     PosicionCelda=0,ComprobarColumna,ComprobarFila,
-    Cuadrado=0, aux=0,
+    Cuadrado=0, aux=0, Filas=10,
     Contador=0, MismaPosicion=0, Random, num1, num2=0, dificultad;
     var Celdas=80;
-    var Tablero = [];
+    var Tablero = [Celdas];
     dificultad = localStorage.getItem("Dificultad");
-
     do
     {
-        if (MismaPosicion == PosicionFila + PosicionColumna)
+        if (MismaPosicion == PosicionCelda)
         {
             Contador += 1;
             if (Contador > 25)
@@ -31,10 +33,8 @@ function CrearSudoku(){
                 for (let i = 0; i < Celdas; i++)
                 {
                     Tablero[i] = 0;
-                    PosicionFila = 0;
-                    PosicionColumna = 0;
-                    CuadranteFila = 0;
-                    CuadranteColumna = 0;
+                    PosicionCelda = 0;
+                    Cuadrado = 0;
                     ComprobarNumero = 0;
                 }
             }
@@ -97,20 +97,6 @@ function CrearSudoku(){
         }
         aux = Cuadrado;
 
-        /*
-        0  1  2    3  4  5    6  7  8
-        9  10 11   12 13 14   15 16 17
-        18 19 20   21 22 23   24 25 26
-
-        27 28 29   30 31 32   33 34 35
-        36 37 38   39 40 41   42 43 44
-        45 46 47   48 49 50   51 52 53
-
-        54 55 56   57 58 59   60 61 62
-        63 64 65   66 67 68   69 70 71
-        72 73 74   75 76 77   78 79 80
-        */
-
         for (let i = aux; i < Cuadrado + 3;)
         {   
             if (ComprobarNumero == Tablero[i])
@@ -125,7 +111,8 @@ function CrearSudoku(){
             Contador ++;
             if (Contador == 3) {
                 Contador = 0;
-                Cuadrado += 9;
+                Cuadrado += 7;
+                i += 7;
             }
             if (Cuadrado == (aux+20)) {
                 i = (Cuadrado+3);
@@ -152,10 +139,10 @@ function CrearSudoku(){
         }
         if (ComprobarNumero > 0)
         {
-            while (ComprobarFila > 8) {
-                ComprobarFila -= 9;
+            while (ComprobarFila%9 != 0) {
+                ComprobarFila --;
             }
-            for (let i = ComprobarFila; i < Celdas;)
+            for (let i = ComprobarFila; i < ComprobarFila + 9; i++)
             {
                 if (ComprobarNumero == Tablero[i])
                 {
@@ -166,28 +153,13 @@ function CrearSudoku(){
                         ComprobarNumero = 0;
                     }
                 }
-                i += 9;
             }
         }
         if (ComprobarNumero > 0)
         {
-            PosicionColumna += 1;
-            if (PosicionColumna == 9)
-            {
-                PosicionFila += 1;
-                PosicionColumna = 0;
-                CuadranteColumna = 0;
-                if (PosicionFila == 3 || PosicionFila == 6)
-                {
-                    CuadranteFila += 3;
-                }
-            }
-            if (PosicionColumna == 3 || PosicionColumna == 6)
-            {
-                CuadranteColumna += 3;
-            }
+            PosicionCelda += 1;
         }
-    } while (PosicionFila < 9);
+    } while (PosicionCelda < 80);
 
 
     
@@ -207,37 +179,40 @@ function CrearSudoku(){
         }
     }
     
-    for (let i = 0; i < Filas; i++)
+    for (let i = 0; i < 9; i++)
     {
         for (let j = 0; j < dificultad; j++)
         {
-            Random = Math.floor(Math.random () * 10) + 1;
-            if (Tablero[i][Random] == 0)
+            Random = Math.floor(Math.random () * Filas) + (Filas-9);
+            if (Tablero[Random] == 0)
             {
                 j -= 1;
             }
             else
             {
-               Tablero[i][Random] = 0; 
+               Tablero[Random] = 0; 
             }
         }
+        Filas += 9;
     }
 
-    for (let i = 0; i < Filas; i++)
+    for (let i = 0; i < Celdas; i++)
     {
-        for (let j = 0; j < Columnas; j++)
-        {
-            if (num2 < i) {
-                num2 = i;
-                num1 = 8 + i + j;
-            }
-            else{
-                num1 = i + j;
-            }
-            if (Tablero[i][j] == 0) {
-                
-            }
-            document.getElementsByTagName("input")[num1].value = Tablero[i][j];
-        }
-    }
+        //document.getElementsByTagName("input")[i].value = Tablero[i];
+        console.log(Tablero[i]);
+    }*/
 }
+
+/*
+        0  1  2    3  4  5    6  7  8
+        9  10 11   12 13 14   15 16 17
+        18 19 20   21 22 23   24 25 26
+
+        27 28 29   30 31 32   33 34 35
+        36 37 38   39 40 41   42 43 44
+        45 46 47   48 49 50   51 52 53
+
+        54 55 56   57 58 59   60 61 62
+        63 64 65   66 67 68   69 70 71
+        72 73 74   75 76 77   78 79 80
+        */
