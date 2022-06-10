@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="Funciones.js"></script>
 </head>
-<body id="body">
+<body id="body" onload="Dificultad()">
 <header>
     <h1>SUDOKU</h1>
 </header>
@@ -21,9 +22,9 @@
     <form>
         <p id="formulario_dificultad">
             <label for="dificultad"><b>Dificultad: </b></label>
-            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil" onchange="Dificultad()"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
-            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal" onclick="Dificultad()" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
-            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil" onselect="Dificultad()"> <label class="formulario_dificultad" for="radio_dificil">Dificil</label>
+            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
+            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal" onclick="Dificultad(this.value)" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
+            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_dificil">Dificil</label>
         </p>
         <p id="formulario_tiempo" class="p_tiempo_vidas">
             <label for="tiempo"><b>Tiempo: </b></label>
