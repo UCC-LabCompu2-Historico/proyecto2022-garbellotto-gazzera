@@ -76,13 +76,13 @@ body {
     text-decoration: none;
 }
 
-#botonIndex {
+#botonIndexJugar, #botonIndexComoJugar {
     margin-top: 35%;
     background-color: rgb(71, 71, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonIndex:hover {
+#botonIndexJugar:hover, #botonIndexComoJugar:hover {
     background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     box-shadow: 0 0 3px rgb(255, 170, 139),
@@ -116,29 +116,18 @@ body {
     border: 3px solid rgb(255, 101, 71);
 }
 
-#botonComoJugar {
-    background-color: white;
-    color: rgb(255, 101, 71);
-    border: 2px solid rgb(150, 150, 150);
-}
-
-#botonComoJugar:hover {
-    background-color: rgba(255, 101, 71, 60%);
-    border: 3px solid rgb(255, 101, 71);
-    color: white;
-}
 
 /*Estilo Como Jugar*/
 
 /*Estilo Jugar*/
 
-#botonJugar {
+#botonSiguiente, #botonVolver {
     background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonJugar:hover {
+#botonSiguiente:hover, #botonVolver:hover {
     background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
@@ -263,13 +252,13 @@ body {
 
 /*Estilo Jugar 2*/
 
-#botonJugar_2 {
+#botonAtras, #botonInicio {
     background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonJugar_2:hover {
+#botonAtras:hover, #botonInicio:hover {
     background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
