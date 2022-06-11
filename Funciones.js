@@ -174,11 +174,16 @@ function Tablero(i, num) {
 }
 
 var timer;
+timer = localStorage.getItem("timerLS");
 var timeRemaining;
 
 function startTimer(tiempo) {
-    alert(tiempo);
+    if (timer == undefined) {
+        timer = 900;
+    }
+    localStorage.setItem("timerLS", tiempo);
     if (tiempo == "10_min") timeRemaining = 600; else if (tiempo == "15_min") timeRemaining = 900; else if (tiempo == "20_min") timeRemaining = 1200; else timeRemaining = 1500;
+
     //Empieza el temporizador
     id("timer").textContent = timeConversion(timeRemaining);
     //Actualizar el temporizador cada 1 segundo
