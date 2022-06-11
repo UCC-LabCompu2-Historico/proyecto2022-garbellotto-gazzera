@@ -83,7 +83,7 @@ body {
 }
 
 #botonIndex:hover {
-    background-color: rgb(255, 101, 71, 0.6);
+    background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     box-shadow: 0 0 3px rgb(255, 170, 139),
     0 0 5px rgb(255, 170, 139),
@@ -112,7 +112,7 @@ body {
 #video {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    background-color: rgb(255, 101, 71, 0.6);
+    background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 #botonComoJugar:hover {
-    background-color: rgb(255, 101, 71, 0.6);
+    background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 #botonJugar:hover {
-    background-color: rgb(255, 101, 71, 0.6);
+    background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
@@ -178,7 +178,7 @@ body {
 }
 
 .formulario_dificultad:hover {
-    background: rgba(253, 95, 64, 0.6);
+    background: rgba(253, 95, 64, 60%);
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
@@ -188,7 +188,7 @@ body {
 }
 
 .input:checked + label {
-    background: rgb(255, 101, 71, 0.6);
+    background: rgba(255, 101, 71, 60%);
     color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 101, 71);
     border-radius: 5px;
@@ -248,7 +248,7 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(66, 66, 66);
-    background: rgba(252, 159, 140, 0.6);
+    background: rgba(252, 159, 140, 60%);
     border-radius: 5px;
     border: 2px solid rgb(255, 101, 71);
     font-weight: bold;
@@ -270,7 +270,7 @@ body {
 }
 
 #botonJugar_2:hover {
-    background-color: rgb(255, 101, 71, 0.6);
+    background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
