@@ -1,8 +1,8 @@
 /**
  * Descripción
  * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
  * @return Valor que retorna
  */
 
@@ -13,6 +13,13 @@ function Dificultad(dificultad) {
     localStorage.setItem("dificultadLS", dificultad);s
 }
 
+/**
+ * Descripción
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 function CrearSudoku(i,num){
     var Dificultad;
     Dificultad = localStorage.getItem("dificultadLS");
@@ -121,3 +128,13 @@ function CrearSudoku(i,num){
         }
     }
 }
+
+/**
+ * Descripción
+ * @method Nombre de la función
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
+
+//function temporizador()
