@@ -137,4 +137,8 @@ function CrearSudoku(i,num){
  * @return Valor que retorna
  */
 
-//function temporizador()
+//function temporizador() y Vidas()
+
+var timer;
+var timeRemaining;
+var lives;
