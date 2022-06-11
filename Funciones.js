@@ -173,17 +173,15 @@ function Tablero(i, num) {
     }
 }
 
-//function temporizador() y Vidas()
-
 var timer;
 var timeRemaining;
 
 function startTimer(tiempo) {
     alert(tiempo);
     if (tiempo == "10_min") timeRemaining = 600; else if (tiempo == "15_min") timeRemaining = 900; else if (tiempo == "20_min") timeRemaining = 1200; else timeRemaining = 1500;
-    //set timer for first second
+    //Empieza el temporizador
     id("timer").textContent = timeConversion(timeRemaining);
-    //set timer to update every second
+    //Actualizar el temporizador cada 1 segundo
     timer = setInterval(function () {
         timeRemaining--;
         if (timeRemaining === 0) endgame();
