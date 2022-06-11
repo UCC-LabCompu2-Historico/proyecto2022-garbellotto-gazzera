@@ -116,17 +116,18 @@ body {
     border: 3px solid rgb(255, 101, 71);
 }
 
-#botonSiguiente{
+#botonSiguiente {
     background-color: white;
     color: rgb(255, 101, 71);
     border: 2px solid rgb(255, 101, 71);
 }
 
-#botonSiguiente:hover{
+#botonSiguiente:hover {
     background-color: rgba(255, 101, 71, 60%);
     border: 3px solid rgb(255, 101, 71);
     color: white;
 }
+
 /*Estilo Como Jugar*/
 
 /*Estilo Jugar*/
@@ -424,7 +425,7 @@ td {
     top: 0px;
 }
 
-.celda{
+.celda {
     font-size: 25px;
     border: none;
     background-color: transparent;
@@ -438,13 +439,13 @@ td {
     font-family: Verdana;
 }
 
-.Incorrecto{
+.Incorrecto {
     font-size: 30px;
     color: rgb(255, 0, 0);
     text-shadow: 0 0 10px rgb(255, 47, 47), 0 0 20px rgb(255, 130, 130), 0 0 20px rgb(255, 191, 191);
 }
 
-.Correcto{
+.Correcto {
     font-size: 30px;
     color: rgb(255, 99, 67);
     text-shadow: 0 0 10px rgb(255, 112, 60), 0 0 20px rgb(255, 151, 113), 0 0 20px rgb(255, 170, 139);

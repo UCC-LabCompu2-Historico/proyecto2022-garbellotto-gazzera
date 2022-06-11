@@ -22,28 +22,40 @@
     <form>
         <p id="formulario_dificultad">
             <label for="formulario_dificultad"><b>Dificultad: </b></label>
-            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
-            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal" onclick="Dificultad(this.value)" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
-            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_dificil">Dificil</label>
+            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil"
+                   onclick="Dificultad(this.value)"> <label class="formulario_dificultad"
+                                                            for="radio_facil">Facil</label>
+            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal"
+                   onclick="Dificultad(this.value)" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
+            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil"
+                   onclick="Dificultad(this.value)"> <label class="formulario_dificultad"
+                                                            for="radio_dificil">Dificil</label>
         </p>
 
         <p id="formulario_tiempo" class="p_tiempo_vidas">
             <label for="formulario_tiempo"><b>Tiempo: </b></label>
             <select name="tiempo" class="select_tiempo_vidas">
-                <option id="time-1" value="ilimitado" onselect="startTimer(this.value)"><label for="formulario_tiempo">Ilimitado</label></option>
-                <option id="time-2" value="10_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">10 min</label></option>
-                <option id="time-3" value="15_min" onselect="startTimer(this.value)" selected><label for="formulario_tiempo">15 min</label></option>
-                <option id="time-4" value="20_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">20 min</label></option>
-                <option id="time-5" value="25_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">25 min</label></option>
+                <option id="time-1" value="ilimitado" onselect="startTimer(this.value)"><label for="formulario_tiempo">Ilimitado</label>
+                </option>
+                <option id="time-2" value="10_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">10
+                    min</label></option>
+                <option id="time-3" value="15_min" onselect="startTimer(this.value)" selected><label
+                        for="formulario_tiempo">15 min</label></option>
+                <option id="time-4" value="20_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">20
+                    min</label></option>
+                <option id="time-5" value="25_min" onselect="startTimer(this.value)"><label for="formulario_tiempo">25
+                    min</label></option>
             </select>
         </p>
 
         <p id="formulario_vidas" class="p_tiempo_vidas">
             <label for="formulario_vidas"><b>Vidas: </b></label>
             <select name="vidas" class="select_tiempo_vidas">
-                <option value="ilimitado" onselect="Vidas(this.value)"><label for="formulario_vidas">Ilimitado</label></option>
+                <option value="ilimitado" onselect="Vidas(this.value)"><label for="formulario_vidas">Ilimitado</label>
+                </option>
                 <option value="5" onselect="Vidas(this.value)"><label for="formulario_vidas">5</label></option>
-                <option value="10" onselect="Vidas(this.value)" selected><label for="formulario_vidas">10</label></option>
+                <option value="10" onselect="Vidas(this.value)" selected><label for="formulario_vidas">10</label>
+                </option>
                 <option value="15" onselect="Vidas(this.value)"><label for="formulario_vidas">15</label></option>
             </select>
         </p>
