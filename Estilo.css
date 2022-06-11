@@ -291,7 +291,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#tiempo {
+#tiempo, #timer {
     height: 45px;
     width: 200px;
     line-height: 45px;
@@ -328,7 +328,15 @@ body {
     margin-left: 31%;
 }
 
-.dificultad_tiempo_vidas {
+.dificultad {
+    text-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
+}
+
+.tiempo {
+    text-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
+}
+
+.vidas {
     text-shadow: 0 0 10px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139), 0 0 20px rgb(255, 170, 139);
 }
 
@@ -360,7 +368,7 @@ td {
 }
 
 #borde_tablero {
-    border: 1px solid rgb(71, 71, 71);
+    border: 3px solid rgb(71, 71, 71);
     border-radius: 10px;
     margin-right: 20px;
 }
@@ -377,14 +385,6 @@ td {
 .borde_2 {
     border: 1px solid rgb(71, 71, 71);
     border-bottom: 0px;
-}
-
-#c1 {
-    border-left: 0px;
-}
-
-#c9 {
-    border-right: 0px;
 }
 
 .borde_derecho {
@@ -408,6 +408,16 @@ td {
     border-bottom: 3px solid rgb(71, 71, 71);
 }
 
+.borde_3 {
+    border: 1px solid rgb(71, 71, 71);
+    border-left: 0px;
+}
+
+.borde_4 {
+    border: 1px solid rgb(71, 71, 71);
+    border-right: 0px;
+}
+
 #botones {
     height: 435px;
     position: absolute;
@@ -423,8 +433,21 @@ td {
     line-height: 28px;
     text-align: center;
     margin: 0px;
-    color: #0000FF;
+    color: rgb(255, 101, 71);
+    text-shadow: 0 0 10px rgb(88, 88, 88), 0 0 20px rgb(158, 158, 158), 0 0 20px rgb(212, 212, 212);
     font-family: Verdana;
+}
+
+.Incorrecto{
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0 10px rgb(255, 47, 47), 0 0 20px rgb(255, 130, 130), 0 0 20px rgb(255, 191, 191);
+}
+
+.Correcto{
+    font-size: 30px;
+    color: rgb(255, 99, 67);
+    text-shadow: 0 0 10px rgb(255, 112, 60), 0 0 20px rgb(255, 151, 113), 0 0 20px rgb(255, 170, 139);
 }
 
 /*Estilo Jugar 2*/
