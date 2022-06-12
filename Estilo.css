@@ -292,13 +292,20 @@ body {
     color: rgb(255, 255, 255);
 }
 
-#tiempo, #timer {
+#tiempo {
     height: 45px;
     width: 200px;
     line-height: 45px;
     background: rgb(185, 185, 185);
     text-align: center;
     border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#timer {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: rgb(255, 255, 255);
@@ -439,16 +446,52 @@ td {
     font-family: Verdana;
 }
 
+.borde:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_1:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_2:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_derecho:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_1_derecho:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_2_derecho:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_3:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.borde_4:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
+.Esquina:hover {
+    background-color: rgba(255, 42, 0, 0.5);
+}
+
 .Incorrecto {
     font-size: 30px;
     color: rgb(255, 0, 0);
-    text-shadow: 0 0 10px rgb(255, 47, 47), 0 0 20px rgb(255, 130, 130), 0 0 20px rgb(255, 191, 191);
+    text-shadow: 0 0 10px rgb(255, 37, 37), 0 0 20px rgb(255, 79, 79), 0 0 20px rgb(255, 145, 145);
 }
 
 .Correcto {
     font-size: 30px;
-    color: rgb(255, 99, 67);
-    text-shadow: 0 0 10px rgb(255, 112, 60), 0 0 20px rgb(255, 151, 113), 0 0 20px rgb(255, 170, 139);
+    color: rgb(255, 111, 82);
+    text-shadow: 0 0 10px rgb(255, 145, 105), 0 0 20px rgb(255, 165, 132), 0 0 20px rgb(255, 202, 183);
 }
 
 /*Estilo Jugar 2*/
