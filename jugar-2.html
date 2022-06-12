@@ -25,7 +25,7 @@
         <h2 id="dificultad"><label id="Mostrar_Dificultad" class="dificultad" for="dificultad"></label></h2>
     </div>
     <div id="divTiempo" class="divTiempoVidas">
-        <h3 id="tiempo"><label id="timer" class="dificultad_tiempo_vidas" for="tiempo"></label></h3>
+        <h3 id="tiempo"><label id="timer" class="tiempo" for="tiempo"></label></h3>
     </div>
     <div id="divVidas" class="divTiempoVidas">
         <h3 id="vidas"><label id="Mostrar_Vidas" class="vidas" for="vidas"></label></h3>
@@ -38,7 +38,7 @@
     <div id="borde_tablero" class="tablero">
         <table id="tablero" align="center">
             <tr id="f1" class="fila">
-                <td class="Esquina"><input id="1" class="celda" onchange="Tablero(this.id,this.value)"></td>
+                <td id="E1" class="Esquina"><input id="1" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_1"><input id="2" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_1_derecho"><input id="3" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_1"><input id="4" class="celda" onchange="Tablero(this.id,this.value)"></td>
@@ -46,7 +46,7 @@
                 <td class="borde_1_derecho"><input id="6" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_1"><input id="7" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_1"><input id="8" class="celda" onchange="Tablero(this.id,this.value)"></td>
-                <td class="Esquina"><input id="9" class="celda" onchange="Tablero(this.id,this.value)"></td>
+                <td id="E2" class="Esquina"><input id="9" class="celda" onchange="Tablero(this.id,this.value)"></td>
             </tr>
             <tr id="f2" class="fila">
                 <td class="borde_3"><input id="10" class="celda" onchange="Tablero(this.id,this.value)"></td>
@@ -126,7 +126,7 @@
                 <td class="borde_4"><input id="72" class="celda" onchange="Tablero(this.id,this.value)"></td>
             </tr>
             <tr id="f9" class="fila">
-                <td class="Esquina"><input id="73" class="celda" onchange="Tablero(this.id,this.value)"></td>
+                <td id="E3" class="Esquina"><input id="73" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_2"><input id="74" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_2_derecho"><input id="75" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_2"><input id="76" class="celda" onchange="Tablero(this.id,this.value)"></td>
@@ -134,7 +134,7 @@
                 <td class="borde_2_derecho"><input id="78" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_2"><input id="79" class="celda" onchange="Tablero(this.id,this.value)"></td>
                 <td class="borde_2"><input id="80" class="celda" onchange="Tablero(this.id,this.value)"></td>
-                <td class="Esquina"><input id="81" class="celda" onchange="Tablero(this.id,this.value)"></td>
+                <td id="E4" class="Esquina"><input id="81" class="celda" onchange="Tablero(this.id,this.value)"></td>
             </tr>
         </table>
     </div>

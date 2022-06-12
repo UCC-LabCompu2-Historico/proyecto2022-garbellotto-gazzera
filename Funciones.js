@@ -16,6 +16,8 @@ var Resultado;
 var timeRemaining;
 var vidas;
 vidas = localStorage.getItem("vidasLS");
+var timer;
+timer = localStorage.getItem("timerLS");
 
 function Dificultad(dificultad) {
     if (dificultad == undefined) {
@@ -79,12 +81,16 @@ function Tablero(i, num) {
     if (Dificultad == "facil") {
         TableroFacilVacio[i] = num;
         if (TableroFacil[i] != TableroFacilVacio[i]) {
-            document.getElementsByTagName("input").disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
-                document.getElementsByTagName("input").disabled = false;
+                for (let j = 0; j < 81; j++) {
+                    document.getElementsByTagName("input")[j].disabled = false;
+                }
             }, 1000);
             vidas--;
         } else {
@@ -98,12 +104,16 @@ function Tablero(i, num) {
     if (Dificultad == "normal") {
         TableroNormalVacio[i] = num;
         if (TableroNormal[i] != TableroNormalVacio[i]) {
-            document.getElementsByTagName("input").disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
-                document.getElementsByTagName("input").disabled = false;
+                for (let j = 0; j < 81; j++) {
+                    document.getElementsByTagName("input")[j].disabled = false;
+                }
             }, 1000);
             vidas--;
         } else {
@@ -117,12 +127,16 @@ function Tablero(i, num) {
     if (Dificultad == "dificil") {
         TableroDificilVacio[i] = num;
         if (TableroDificil[i] != TableroDificilVacio[i]) {
-            document.getElementsByTagName("input").disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
-                document.getElementsByTagName("input").disabled = false;
+                for (let j = 0; j < 81; j++) {
+                    document.getElementsByTagName("input")[j].disabled = false;
+                }
             }, 1000);
             vidas--;
         } else {
@@ -185,8 +199,6 @@ function Tiempo(tiempo) {
 }
 
 function starTimer() {
-    var timer;
-    timer = localStorage.getItem("timerLS");
     if (timer == "10_min") {
         timeRemaining = 600;
     }else if (timer == "15_min") {
@@ -208,7 +220,6 @@ function starTimer() {
                 Resultado = "Perdio"
                 endgame();
                 document.getElementById("timer").innerHTML = timeConversion(timeRemaining);
-                clearInterval(timer);
             }
             else {
                 timeRemaining --;
@@ -234,8 +245,11 @@ function timeConversion(time) {
 }
 
 function endgame() {
-    document.getElementsByTagName("input").disabled = true;
-    timeRemaining = 0;
+    for (let j = 0; j < 81; j++) {
+        document.getElementsByTagName("input")[j].disabled = true;
+    }
+    clearInterval(timer);
+    document.getElementById("timer").innerHTML = "Tiempo | 00:00";
     if (Resultado == "Gano") {
         alert("Gano");
     } else {
