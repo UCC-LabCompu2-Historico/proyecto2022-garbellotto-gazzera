@@ -13,6 +13,7 @@ var TableroNormalVacio = [0, 1, 0, 0, 4, 0, 0, 9, 6, 6, 0, 0, 9, 0, 1, 0, 7, 0, 
 var TableroDificil = [6, 4, 8, 1, 2, 5, 3, 9, 7, 7, 5, 3, 8, 9, 6, 1, 4, 2, 2, 1, 9, 7, 3, 4, 5, 8, 6, 9, 7, 2, 3, 1, 8, 4, 6, 5, 8, 6, 4, 5, 7, 2, 9, 3, 1, 5, 3, 1, 6, 4, 9, 2, 7, 8, 1, 9, 7, 2, 6, 3, 8, 5, 4, 3, 8, 6, 4, 5, 1, 7, 2, 9, 4, 2, 5, 9, 8, 7, 6, 1, 3];
 var TableroDificilVacio = [6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 8, 0, 9, 0, 0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 0];
 var Resultado;
+var timeRemaining;
 var vidas;
 vidas = localStorage.getItem("vidasLS");
 
@@ -186,7 +187,6 @@ function Tiempo(tiempo) {
 function starTimer() {
     var timer;
     timer = localStorage.getItem("timerLS");
-    var timeRemaining;
     if (timer == "10_min") {
         timeRemaining = 600;
     }else if (timer == "15_min") {
@@ -207,6 +207,7 @@ function starTimer() {
             if (timeRemaining == 0) {
                 Resultado = "Perdio"
                 endgame();
+                document.getElementById("timer").innerHTML = timeConversion(timeRemaining);
                 clearInterval(timer);
             }
             else {
@@ -234,6 +235,7 @@ function timeConversion(time) {
 
 function endgame() {
     document.getElementsByTagName("input").disabled = true;
+    timeRemaining = 0;
     if (Resultado == "Gano") {
         alert("Gano");
     } else {
