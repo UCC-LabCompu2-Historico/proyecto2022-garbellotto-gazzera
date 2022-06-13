@@ -271,20 +271,59 @@ function timeConversion(time) {
     return document.getElementById("timer").innerHTML = "Tiempo | " + minutes + ":" + seconds;
 }
 
+
+
+
 function endgame() {
     //Creamos el canvas
-    //let canvas = document.getElementById("myCanvas");
-    //let ctx = canvas.getContext("2d");
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    var contador = 20;
+    var contador2 = 180;
+
+    canvas.width = 1000;
+    canvas.height = 300;
+
+
+
+    var aumento = setInterval(() => {
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.textAlign  = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = "rgb(255, 170, 139)";
+
+        if (Resultado == "Gano") {
+            ctx.fillText( "GANASTE", canvas.width/2, canvas.height/2);
+        } else {
+            ctx.fillText( "PERDISTE", canvas.width/2, canvas.height/2);
+        }
+
+
+        if (contador<=180){
+            ctx.font = contador + "px Press Start 2P";
+            contador += 0.5;
+        }
+        else{
+            if (contador2 >= 20){
+                ctx.font = contador2 + "px Press Start 2P";
+                contador2 -= 0.5;
+            }
+        }
+
+        if (contador2 < 20){
+            contador2=180;
+            contador=20;
+        }
+
+    }, 5);
+
 
     clearInterval(timer);
     document.getElementById("timer").innerHTML = "Tiempo | 00:00";
-    if (Resultado == "Gano") {
-        alert("Gano");
-    } else {
-        alert("Perdio");
-    }
     for (let i = 0; i < 81; i++) {
         document.getElementsByTagName("input")[i].disabled = true;
     }
+
     document.getElementsByClassName("tablero")[0].classList.add("Terminar");
+    document.getElementsByClassName("canvas")[0].classList.add("mostrarCanvas");
 }
