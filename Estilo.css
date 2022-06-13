@@ -538,8 +538,6 @@ td {
     text-shadow: 0 0 10px rgb(255, 145, 105), 0 0 20px rgb(255, 165, 132), 0 0 20px rgb(255, 202, 183);
 }
 
-/*Estilo Jugar 2*/
-
 .Terminar {
     display: none;
 }
@@ -560,3 +558,5 @@ td {
     box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.6);
     border: 3px solid #8e8e8e6b;
 }
+
+/*Estilo Jugar 2*/
