@@ -89,15 +89,24 @@ function Tablero(i, num) {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
                 for (let j = 0; j < 81; j++) {
-                    document.getElementsByTagName("input")[j].disabled = false;
+                    if (TableroFacilVacio[j] != TableroFacil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
                 }
             }, 1000);
             vidas--;
         } else {
-            document.getElementsByTagName("input")[i].disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Correcto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroFacilVacio[j] != TableroFacil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
             }, 1000);
         }
     }
@@ -112,15 +121,24 @@ function Tablero(i, num) {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
                 for (let j = 0; j < 81; j++) {
-                    document.getElementsByTagName("input")[j].disabled = false;
+                    if (TableroNormalVacio[j] != TableroNormal[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
                 }
             }, 1000);
             vidas--;
         } else {
-            document.getElementsByTagName("input")[i].disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Correcto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroNormalVacio[j] != TableroNormal[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
             }, 1000);
         }
     }
@@ -135,15 +153,24 @@ function Tablero(i, num) {
                 document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
                 document.getElementsByClassName("celda")[i].value = "";
                 for (let j = 0; j < 81; j++) {
-                    document.getElementsByTagName("input")[j].disabled = false;
+                    if (TableroDificilVacio[j] != TableroDificil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
                 }
             }, 1000);
             vidas--;
         } else {
-            document.getElementsByTagName("input")[i].disabled = true;
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
             document.getElementsByClassName("celda")[i].classList.add("Correcto");
             setTimeout(function () {
                 document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroDificilVacio[j] != TableroDificil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
             }, 1000);
         }
     }
@@ -245,14 +272,14 @@ function timeConversion(time) {
 }
 
 function endgame() {
-    for (let j = 0; j < 81; j++) {
-        document.getElementsByTagName("input")[j].disabled = true;
-    }
-    clearInterval(timer);
+    //clearInterval(timer);
     document.getElementById("timer").innerHTML = "Tiempo | 00:00";
     if (Resultado == "Gano") {
         alert("Gano");
     } else {
         alert("Perdio");
+    }
+    for (let i = 0; i < 81; i++) {
+        document.getElementsByTagName("input")[i].disabled = true;
     }
 }
