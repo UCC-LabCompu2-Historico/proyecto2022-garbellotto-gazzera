@@ -148,6 +148,32 @@ body {
     margin-bottom: 200px;
 }
 
+#formulario_nombre {
+    text-align: center;
+    background: rgb(66, 66, 66);
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: box-shadow 0.7s ease;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 10%;
+}
+
+#nombre {
+    border: 0;
+    outline: none;
+    background: rgb(66, 66, 66);
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
 #formulario_dificultad {
     background: rgb(66, 66, 66);
     text-align: center;
@@ -160,7 +186,6 @@ body {
     width: 500px;
     height: 70px;
     line-height: 70px;
-    margin-top: 15%;
 }
 
 #formulario_dificultad:hover {
@@ -540,6 +565,8 @@ td {
 
 /*Estilo Jugar 2*/
 
+
+/*Canvas y Borrar Tablero*/
 .Terminar {
     display: none;
 }
@@ -560,3 +587,4 @@ td {
     box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.6);
     border: 3px solid #8e8e8e6b;
 }
+/*Canvas y Borrar Tablero*/
