@@ -272,6 +272,15 @@ function timeConversion(time) {
 }
 
 function endgame() {
+    //Ocultar tablero
+    //var tabla = document.getElementById(tablero);
+    //tabla.style.display = "none";
+
+
+    //Creamos el canvas
+    //let canvas = document.getElementById("myCanvas");
+    //let ctx = canvas.getContext("2d");
+
     clearInterval(timer);
     document.getElementById("timer").innerHTML = "Tiempo | 00:00";
     if (Resultado == "Gano") {
