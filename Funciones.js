@@ -291,4 +291,5 @@ function endgame() {
     for (let i = 0; i < 81; i++) {
         document.getElementsByTagName("input")[i].disabled = true;
     }
+    document.getElementsByClassName("tablero")[0].classList.add("Terminar");
 }
