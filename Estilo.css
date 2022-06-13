@@ -539,3 +539,7 @@ td {
 }
 
 /*Estilo Jugar 2*/
+
+.Terminar {
+    display: none;
+}
