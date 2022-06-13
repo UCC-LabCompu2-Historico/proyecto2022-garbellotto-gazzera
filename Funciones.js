@@ -272,7 +272,7 @@ function timeConversion(time) {
 }
 
 function endgame() {
-    //clearInterval(timer);
+    clearInterval(timer);
     document.getElementById("timer").innerHTML = "Tiempo | 00:00";
     if (Resultado == "Gano") {
         alert("Gano");
