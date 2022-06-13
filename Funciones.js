@@ -300,12 +300,12 @@ function endgame() {
 
 
         if (contador<=180){
-            ctx.font = contador + "px Press Start 2P";
+            ctx.font = contador + "px Source Sans Pro";
             contador += 0.5;
         }
         else{
             if (contador2 >= 20){
-                ctx.font = contador2 + "px Press Start 2P";
+                ctx.font = contador2 + "px Source Sans Pro";
                 contador2 -= 0.5;
             }
         }
