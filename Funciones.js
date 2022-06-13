@@ -331,3 +331,12 @@ function endgame() {
     document.getElementsByClassName("tablero")[0].classList.add("Terminar");
     document.getElementsByClassName("canvas")[0].classList.add("mostrarCanvas");
 }
+
+
+function txNombres() {
+    if((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
+        alert("Solo puede ingresar letras");
+    }
+    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
+        event.returnValue = false;
+}
