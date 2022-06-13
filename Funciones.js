@@ -272,11 +272,6 @@ function timeConversion(time) {
 }
 
 function endgame() {
-    //Ocultar tablero
-    //var tabla = document.getElementById(tablero);
-    //tabla.style.display = "none";
-
-
     //Creamos el canvas
     //let canvas = document.getElementById("myCanvas");
     //let ctx = canvas.getContext("2d");
