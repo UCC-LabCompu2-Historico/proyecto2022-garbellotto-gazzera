@@ -563,13 +563,12 @@ td {
     text-shadow: 0 0 10px rgb(255, 145, 105), 0 0 20px rgb(255, 165, 132), 0 0 20px rgb(255, 202, 183);
 }
 
-<<<<<<< HEAD
+
 /*Estilo Jugar 2*/
 
 
 /*Canvas y Borrar Tablero*/
-=======
->>>>>>> ac95f5eb84b71c818d94394c9bfaa4043a7cdeed
+
 .Terminar {
     display: none;
 }
@@ -590,9 +589,4 @@ td {
     box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.6);
     border: 3px solid #8e8e8e6b;
 }
-<<<<<<< HEAD
 /*Canvas y Borrar Tablero*/
-=======
-
-/*Estilo Jugar 2*/
->>>>>>> ac95f5eb84b71c818d94394c9bfaa4043a7cdeed
