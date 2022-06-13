@@ -271,9 +271,6 @@ function timeConversion(time) {
     return document.getElementById("timer").innerHTML = "Tiempo | " + minutes + ":" + seconds;
 }
 
-
-
-
 function endgame() {
     //Creamos el canvas
     let canvas = document.getElementById("myCanvas");
@@ -284,28 +281,36 @@ function endgame() {
     canvas.width = 1000;
     canvas.height = 300;
 
-
-
-    var aumento = setInterval(() => {
+    var animacion = setInterval(() => {
         ctx.clearRect(0,0,canvas.width,canvas.height);
         ctx.textAlign  = "center";
         ctx.textBaseline = "middle";
-        ctx.fillStyle = "rgb(255, 170, 139)";
+        ctx.fillStyle = "rgb(255, 145, 105)";
+        ctx.strokeStyle = "rgb(255, 76, 41)";
 
         if (Resultado == "Gano") {
             ctx.fillText( "GANASTE", canvas.width/2, canvas.height/2);
+            ctx.strokeText( "GANASTE", canvas.width/2, canvas.height/2);
+            ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
+            ctx.shadowOffsetX = 3;
+            ctx.shadowOffsetY = 3;
+            ctx.shadowBlur = 3;
         } else {
             ctx.fillText( "PERDISTE", canvas.width/2, canvas.height/2);
+            ctx.strokeText( "PERDISTE", canvas.width/2, canvas.height/2);
+            ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
+            ctx.shadowOffsetX = 3;
+            ctx.shadowOffsetY = 3;
+            ctx.shadowBlur = 3;
         }
 
-
         if (contador<=180){
-            ctx.font = contador + "px Source Sans Pro";
+            ctx.font = contador + "px Arial";
             contador += 0.5;
         }
         else{
             if (contador2 >= 20){
-                ctx.font = contador2 + "px Source Sans Pro";
+                ctx.font = contador2 + "px Arial";
                 contador2 -= 0.5;
             }
         }
@@ -316,7 +321,6 @@ function endgame() {
         }
 
     }, 5);
-
 
     clearInterval(timer);
     document.getElementById("timer").innerHTML = "Tiempo | 00:00";
