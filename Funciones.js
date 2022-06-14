@@ -1,17 +1,11 @@
-/**
- * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
- */
-
+//Tableros
 var TableroFacil = [5, 9, 3, 7, 8, 2, 4, 6, 1, 1, 8, 7, 6, 4, 9, 5, 2, 3, 6, 4, 2, 3, 5, 1, 8, 7, 9, 9, 1, 8, 5, 6, 7, 2, 3, 4, 3, 2, 5, 9, 1, 4, 6, 8, 7, 4, 7, 6, 8, 2, 3, 1, 9, 5, 2, 3, 1, 4, 9, 8, 7, 5, 6, 8, 6, 9, 1, 7, 5, 3, 4, 2, 7, 5, 4, 2, 3, 6, 9, 1, 8];
 var TableroFacilVacio = [5, 9, 3, 0, 0, 0, 4, 6, 1, 1, 0, 7, 6, 4, 0, 5, 0, 3, 0, 4, 2, 3, 0, 1, 8, 0, 9, 9, 0, 8, 0, 6, 0, 2, 3, 4, 3, 2, 5, 0, 0, 4, 0, 8, 7, 4, 0, 6, 8, 2, 3, 1, 0, 0, 0, 3, 1, 4, 0, 8, 0, 5, 6, 8, 6, 9, 1, 0, 5, 3, 0, 0, 7, 5, 0, 2, 0, 6, 9, 1, 0];
 var TableroNormal = [5, 1, 3, 2, 4, 7, 8, 9, 6, 6, 2, 8, 9, 5, 1, 4, 7, 3, 7, 9, 4, 3, 6, 8, 2, 5, 1, 3, 7, 9, 8, 1, 6, 5, 4, 2, 2, 4, 5, 7, 9, 3, 1, 6, 8, 1, 8, 6, 5, 2, 4, 9, 3, 7, 8, 6, 1, 4, 7, 5, 3, 2, 9, 9, 5, 7, 1, 3, 2, 6, 8, 4, 4, 3, 2, 6, 8, 9, 7, 1, 5];
 var TableroNormalVacio = [0, 1, 0, 0, 4, 0, 0, 9, 6, 6, 0, 0, 9, 0, 1, 0, 7, 0, 0, 0, 4, 0, 0, 8, 2, 0, 1, 0, 7, 0, 8, 0, 0, 5, 0, 2, 2, 0, 5, 7, 0, 0, 0, 0, 8, 0, 8, 0, 0, 2, 0, 9, 3, 0, 0, 6, 0, 4, 0, 5, 0, 2, 0, 9, 0, 7, 0, 0, 2, 0, 8, 0, 0, 3, 0, 6, 0, 9, 0, 0, 5];
 var TableroDificil = [6, 4, 8, 1, 2, 5, 3, 9, 7, 7, 5, 3, 8, 9, 6, 1, 4, 2, 2, 1, 9, 7, 3, 4, 5, 8, 6, 9, 7, 2, 3, 1, 8, 4, 6, 5, 8, 6, 4, 5, 7, 2, 9, 3, 1, 5, 3, 1, 6, 4, 9, 2, 7, 8, 1, 9, 7, 2, 6, 3, 8, 5, 4, 3, 8, 6, 4, 5, 1, 7, 2, 9, 4, 2, 5, 9, 8, 7, 6, 1, 3];
 var TableroDificilVacio = [6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 8, 0, 9, 0, 0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 0];
+//Otras variables
 var Resultado;
 var timeRemaining;
 var vidas;
@@ -19,6 +13,12 @@ vidas = localStorage.getItem("vidasLS");
 var timer;
 timer = localStorage.getItem("timerLS");
 
+/**
+ * La funcion establece que si la Dificultad no esta establecida se defina como normal
+ * @method Dificultad
+ * @param {string} dificultad - Almacena el valor de la dificultad que puede ser: facil, normal o dificil
+ * @return retorna un {string} en este caso "normal" el cual se iguala a dificultad y hace que tome ese valor. Tambien le da el valor de dificultad a "dificultadLS" para luego usarla.
+ */
 function Dificultad(dificultad) {
     if (dificultad == undefined) {
         dificultad = "normal";
@@ -26,6 +26,12 @@ function Dificultad(dificultad) {
     localStorage.setItem("dificultadLS", dificultad);
 }
 
+/**
+ * La funcion establece que si las vidas no estan establecidas se definan con el valor 10
+ * @method Vidas
+ * @param {string} vidas - Almacena el valor de las vidas que puede ser: ilimitado, 5 , 10 , 15
+ * @return retorna un {string} el cual le da un valor de 10 a las vidas
+ */
 function Vidas(vidas) {
     if (vidas == undefined) {
         vidas = 10;
@@ -33,6 +39,13 @@ function Vidas(vidas) {
     localStorage.setItem("vidasLS", vidas);
 }
 
+/**
+ * Esta funcion muestra el tablero indicado segun la dificultad. Tambien permite que se muestre en los casilleros la dificultad y las vidas elegidas por el usuario.
+ * @method CrearSudoku
+ * @param (var) Dificultad - (llamada dentro de la funcion) este parametro toma el valor de dificultadLS que fue anteriormente establecido en la funcion Dificultad()
+ * @param (var) vidas - El id de vidas toma el valor establecido en la funcion Vidas()
+ * @return Devuelve los valores de las vidas y dificultad para asi mostrar el tablero indicado segun la dificultad y tambien indicar la cantidad de vidas que el jugador posee.
+ */
 function CrearSudoku() {
     var Dificultad;
     Dificultad = localStorage.getItem("dificultadLS");
@@ -71,6 +84,13 @@ function CrearSudoku() {
     }
 }
 
+/**
+ * Descripción de que hace la función
+ * @method Tablero
+ * @param {number} i - Explicación de que valor almacena ParámetroA
+ * @param {number} num - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 function Tablero(i, num) {
     var Terminar = 0;
     var Dificultad;
@@ -218,6 +238,12 @@ function Tablero(i, num) {
     }
 }
 
+/**
+ * La funcion establece que si el tiempo no esta establecido se defina como 15_min
+ * @method Tiempo
+ * @param {string} tiempo - almacena los valores que se eligen para el tiempo que puede ser: ilimitado, 10_min, 15_min, 20_min, 25_min
+ * @return retorna un {string} en este caso "15_min" el cual se iguala a tiempo y hace que tome ese valor. Tambien le da el valor de dificultad a "timerLS" para luego usarla.
+ */
 function Tiempo(tiempo) {
     if (tiempo == undefined) {
         tiempo = "15_min";
@@ -225,6 +251,12 @@ function Tiempo(tiempo) {
     localStorage.setItem("timerLS", tiempo);
 }
 
+/**
+ * Esta funcion es un temporizador en segundos. Esta muestra el tiempo restante en un recuadro por encima del tablero.
+ * @method starTimer
+ * @param (var) timer - Utiliza el var timer que tiene los valores de "timerLS" para establecer los segundos del temporizador
+ * @return retorna un valor en segundos para usarlo en el timeRemaining. Si timeRemaining = 0 aqui la funcion hace Resultado = "Perdio" y llama a la funcion endgame().
+ */
 function starTimer() {
     if (timer == "10_min") {
         timeRemaining = 600;
@@ -259,6 +291,12 @@ function starTimer() {
     }
 }
 
+/**
+ * Transforma los segundos de la funcion starTimer() a minutos:segundos
+ * @method timeConversion
+ * @param {number} time - Almacena los valores del timeRemaining que es quien almacena los segundos en la funcion starTimer()
+ * @return Retorna al Id "Timer" el tiempo pasado a minutos:segundos.
+ */
 function timeConversion(time) {
     let minutes = Math.floor(time / 60);
     if (minutes < 10) {
@@ -271,6 +309,13 @@ function timeConversion(time) {
     return document.getElementById("timer").innerHTML = "Tiempo | " + minutes + ":" + seconds;
 }
 
+/**
+ * Elimina el tablero y crea el canvas mostrando una animacion diciendo "GANASTE" o "PERDISTE". Tambien pone el tiempo en 00:00.
+ * @method endgame
+ * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+ * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+ * @return Valor que retorna
+ */
 function endgame() {
     //Creamos el canvas
     let canvas = document.getElementById("myCanvas");
@@ -332,8 +377,13 @@ function endgame() {
     document.getElementsByClassName("canvas")[0].classList.add("mostrarCanvas");
 }
 
-
+/**
+ * Esta funcion bloquea el ingreso de numeros, espacios y otras teclas que no sean de letras en el input del nombre. De esta manera solo deja ingresar las letras.
+ * @method txNombres
+ * @return Si se toca una tecla que no es de una letra retorna un alert diciendo que solo se pueden ingresar letras
+ */
 function txNombres() {
+    //Lee en que tecla se hace click
     if((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
         alert("Solo puede ingresar letras");
     }
@@ -342,6 +392,12 @@ function txNombres() {
     }
 }
 
+/**
+ * Esta funcion hace que cuando se quiera seguir a la pagina "jugar-2.html" pero el campo de "nombre" esta vacio de una alerta de que falta completar este campo.
+ * @method BotonJugar
+ * @param (string) id - (llamado dentro de la funcion) El id del nombre para ver si valor esta vacio.
+ * @return retorna un alert diciendo que debe ingresar un nombre.
+ */
 function BotonJugar() {
     if (document.getElementById("nombre").value == "") {
         alert("Tiene que ingresar un nombre");
