@@ -221,7 +221,7 @@ function Tablero(i, num) {
                 }
             }
             if (Dificultad == "dificil") {
-                if (TableroDificilVacio[j] == TableroDificilVacio[j]) {
+                if (TableroDificilVacio[j] == TableroDificil[j]) {
                     Terminar = 1;
                     Resultado = "Gano";
                 } else {
