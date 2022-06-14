@@ -312,9 +312,7 @@ function timeConversion(time) {
 /**
  * Elimina el tablero y crea el canvas mostrando una animacion diciendo "GANASTE" o "PERDISTE". Tambien pone el tiempo en 00:00.
  * @method endgame
- * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
- * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * @return retorna el canvas con una animacion para el texto.
  */
 function endgame() {
     //Creamos el canvas
