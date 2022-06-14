@@ -95,7 +95,7 @@ function Tablero(i, num) {
     var Terminar = 0;
     var Dificultad;
     Dificultad = localStorage.getItem("dificultadLS");
-    
+
     i--;
 
     if (Dificultad == "facil") {
@@ -200,8 +200,7 @@ function Tablero(i, num) {
     if (vidas == 0) {
         Terminar = 1;
         Resultado = "Perdio";
-    }
-    else {
+    } else {
         for (let j = 0; j < 81; j++) {
             if (Dificultad == "facil") {
                 if (TableroFacilVacio[j] == TableroFacil[j]) {
@@ -260,18 +259,17 @@ function Tiempo(tiempo) {
 function starTimer() {
     if (timer == "10_min") {
         timeRemaining = 600;
-    }else if (timer == "15_min") {
+    } else if (timer == "15_min") {
         timeRemaining = 900;
-    }else if (timer == "20_min") {
+    } else if (timer == "20_min") {
         timeRemaining = 1200;
-    }else if (timer == "25_min"){
+    } else if (timer == "25_min") {
         timeRemaining = 1500;
-    }
-    else {
+    } else {
         timeRemaining = "ilimitado";
     }
     if (timeRemaining != "ilimitado") {
-       //Empieza el temporizador
+        //Empieza el temporizador
         document.getElementById("timer").innerHTML = timeConversion(timeRemaining);
         //Actualizar el temporizador cada 1 segundo
         timer = setInterval(function () {
@@ -279,14 +277,12 @@ function starTimer() {
                 Resultado = "Perdio"
                 endgame();
                 document.getElementById("timer").innerHTML = timeConversion(timeRemaining);
-            }
-            else {
-                timeRemaining --;
+            } else {
+                timeRemaining--;
                 document.getElementById("timer").innerHTML = timeConversion(timeRemaining);
             }
-        }, 1000) 
-    }
-    else {
+        }, 1000)
+    } else {
         document.getElementById("timer").innerHTML = "Tiempo | Ilimitado";
     }
 }
@@ -325,42 +321,41 @@ function endgame() {
     canvas.height = 300;
 
     var animacion = setInterval(() => {
-        ctx.clearRect(0,0,canvas.width,canvas.height);
-        ctx.textAlign  = "center";
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.textAlign = "center";
         ctx.textBaseline = "middle";
         ctx.fillStyle = "rgb(255, 145, 105)";
         ctx.strokeStyle = "rgb(255, 76, 41)";
 
         if (Resultado == "Gano") {
-            ctx.fillText( "GANASTE", canvas.width/2, canvas.height/2);
-            ctx.strokeText( "GANASTE", canvas.width/2, canvas.height/2);
+            ctx.fillText("GANASTE", canvas.width / 2, canvas.height / 2);
+            ctx.strokeText("GANASTE", canvas.width / 2, canvas.height / 2);
             ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
             ctx.shadowOffsetX = 3;
             ctx.shadowOffsetY = 3;
             ctx.shadowBlur = 3;
         } else {
-            ctx.fillText( "PERDISTE", canvas.width/2, canvas.height/2);
-            ctx.strokeText( "PERDISTE", canvas.width/2, canvas.height/2);
+            ctx.fillText("PERDISTE", canvas.width / 2, canvas.height / 2);
+            ctx.strokeText("PERDISTE", canvas.width / 2, canvas.height / 2);
             ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
             ctx.shadowOffsetX = 3;
             ctx.shadowOffsetY = 3;
             ctx.shadowBlur = 3;
         }
 
-        if (contador<=180){
+        if (contador <= 180) {
             ctx.font = contador + "px Arial";
             contador += 0.5;
-        }
-        else{
-            if (contador2 >= 20){
+        } else {
+            if (contador2 >= 20) {
                 ctx.font = contador2 + "px Arial";
                 contador2 -= 0.5;
             }
         }
 
-        if (contador2 < 20){
-            contador2=180;
-            contador=20;
+        if (contador2 < 20) {
+            contador2 = 180;
+            contador = 20;
         }
 
     }, 5);
@@ -382,10 +377,10 @@ function endgame() {
  */
 function txNombres() {
     //Lee en que tecla se hace click
-    if((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
+    if ((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)) {
         alert("Solo puede ingresar letras");
     }
-    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
+    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)) {
         event.returnValue = false;
     }
 }
@@ -399,8 +394,7 @@ function txNombres() {
 function BotonJugar() {
     if (document.getElementById("nombre").value == "") {
         alert("Tiene que ingresar un nombre");
-    }
-    else {
+    } else {
         url = "jugar-2.html";
         window.open(url);
     }

@@ -47,7 +47,7 @@ body {
     background: url(imagenes/fondo_gris.png);
 }
 
-.a:visited, .a:link ,.a{
+.a:visited, .a:link, .a {
     color: rgb(66, 66, 66);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -573,20 +573,21 @@ td {
     display: none;
 }
 
-.canvas{
+.canvas {
     display: none;
 }
 
-.mostrarCanvas{
+.mostrarCanvas {
     display: block;
 }
 
-#myCanvas{
+#myCanvas {
     background: url(imagenes/fondo_tablero.png);
     margin: 4em auto 0;
     display: block;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 4px rgba(0,0,0,0.6);
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.6);
     border: 3px solid #8e8e8e6b;
 }
+
 /*Canvas y Borrar Tablero*/
