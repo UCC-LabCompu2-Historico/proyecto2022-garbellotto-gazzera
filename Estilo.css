@@ -47,7 +47,7 @@ body {
     background: url(imagenes/fondo_gris.png);
 }
 
-.a:visited, .a:link {
+.a:visited, .a:link ,.a{
     color: rgb(66, 66, 66);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -145,34 +145,8 @@ body {
 }
 
 #formulario {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
-
-#formulario_nombre {
-    text-align: center;
-    background: rgb(66, 66, 66);
-    border: 3px solid rgb(255, 101, 71);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    transition: box-shadow 0.7s ease;
-    border-radius: 10px;
-    width: 500px;
-    height: 70px;
-    line-height: 70px;
-    margin-top: 10%;
-}
-
-#nombre {
-    border: 0;
-    outline: none;
-    background: rgb(66, 66, 66);
-    width: 350px;
-    height: 50px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-}
-
 
 #formulario_dificultad {
     background: rgb(66, 66, 66);
@@ -186,6 +160,7 @@ body {
     width: 500px;
     height: 70px;
     line-height: 70px;
+    margin-top: 15%;
 }
 
 #formulario_dificultad:hover {
@@ -282,6 +257,31 @@ body {
 .select_tiempo_vidas:checked + label {
     border-radius: 5px;
     border: 2px solid rgb(255, 101, 71);
+}
+
+#formulario_nombre {
+    text-align: center;
+    background: rgb(66, 66, 66);
+    border: 3px solid rgb(255, 101, 71);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: box-shadow 0.7s ease;
+    border-radius: 10px;
+    width: 500px;
+    height: 70px;
+    line-height: 70px;
+    margin-top: 13%;
+}
+
+#nombre {
+    border: 0;
+    outline: none;
+    background: rgb(66, 66, 66);
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 /*Estilo Jugar*/

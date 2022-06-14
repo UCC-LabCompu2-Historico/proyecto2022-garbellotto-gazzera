@@ -337,6 +337,17 @@ function txNombres() {
     if((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
         alert("Solo puede ingresar letras");
     }
-    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122))
+    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)){
         event.returnValue = false;
+    }
+}
+
+function BotonJugar() {
+    if (document.getElementById("nombre").value == "") {
+        alert("Tiene que ingresar un nombre");
+    }
+    else {
+        url = "jugar-2.html";
+        window.open(url);
+    }
 }

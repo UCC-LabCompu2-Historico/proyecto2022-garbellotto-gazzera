@@ -20,12 +20,6 @@
 </header>
 <div id="formulario" align="center">
     <form>
-
-        <p id="formulario_nombre">
-            <label for="formulario_nombre"><b>Nombre: </b></label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeypress="txNombres()">
-        </p>
-
         <p id="formulario_dificultad">
             <label for="formulario_dificultad"><b>Dificultad: </b></label>
             <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
@@ -53,11 +47,16 @@
                 <option value="15"><label for="formulario_vidas">15</label></option>
             </select>
         </p>
+
+        <p id="formulario_nombre">
+            <label for="formulario_nombre"><b>Nombre: </b></label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeypress="txNombres()">
+        </p>
     </form>
 </div>
 <div>
     <p>
-        <button id="botonJugar" class="boton"><a class="a" href="jugar-2.html">Jugar</a></button>
+        <button id="botonJugar" class="boton"><a class="a" onclick="BotonJugar()">Jugar</a></button>
         <button id="botonVolver" class="boton"><a class="a" href="index.html">Volver a Inicio</a></button>
     </p>
 </div>
