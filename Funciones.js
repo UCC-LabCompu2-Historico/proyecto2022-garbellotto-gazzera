@@ -406,3 +406,17 @@ function BotonJugar() {
         window.open("jugar-2.html");
     }
 }
+
+
+function valideKey(evt){
+
+    var code = (evt.which) ? evt.which : evt.keyCode;
+
+    if(code==8) { // espacio
+        return true;
+    } else if(code>=48 && code<=57) { // numero
+        return true;
+    } else{ // otra tecla
+        return false;
+    }
+}
