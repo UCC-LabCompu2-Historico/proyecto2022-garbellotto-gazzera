@@ -1,10 +1,10 @@
 //Tableros
-var TableroFacil = [5, 9, 3, 7, 8, 2, 4, 6, 1, 1, 8, 7, 6, 4, 9, 5, 2, 3, 6, 4, 2, 3, 5, 1, 8, 7, 9, 9, 1, 8, 5, 6, 7, 2, 3, 4, 3, 2, 5, 9, 1, 4, 6, 8, 7, 4, 7, 6, 8, 2, 3, 1, 9, 5, 2, 3, 1, 4, 9, 8, 7, 5, 6, 8, 6, 9, 1, 7, 5, 3, 4, 2, 7, 5, 4, 2, 3, 6, 9, 1, 8];
-var TableroFacilVacio = [5, 9, 3, 0, 0, 0, 4, 6, 1, 1, 0, 7, 6, 4, 0, 5, 0, 3, 0, 4, 2, 3, 0, 1, 8, 0, 9, 9, 0, 8, 0, 6, 0, 2, 3, 4, 3, 2, 5, 0, 0, 4, 0, 8, 7, 4, 0, 6, 8, 2, 3, 1, 0, 0, 0, 3, 1, 4, 0, 8, 0, 5, 6, 8, 6, 9, 1, 0, 5, 3, 0, 0, 7, 5, 0, 2, 0, 6, 9, 1, 0];
-var TableroNormal = [5, 1, 3, 2, 4, 7, 8, 9, 6, 6, 2, 8, 9, 5, 1, 4, 7, 3, 7, 9, 4, 3, 6, 8, 2, 5, 1, 3, 7, 9, 8, 1, 6, 5, 4, 2, 2, 4, 5, 7, 9, 3, 1, 6, 8, 1, 8, 6, 5, 2, 4, 9, 3, 7, 8, 6, 1, 4, 7, 5, 3, 2, 9, 9, 5, 7, 1, 3, 2, 6, 8, 4, 4, 3, 2, 6, 8, 9, 7, 1, 5];
-var TableroNormalVacio = [0, 1, 0, 0, 4, 0, 0, 9, 6, 6, 0, 0, 9, 0, 1, 0, 7, 0, 0, 0, 4, 0, 0, 8, 2, 0, 1, 0, 7, 0, 8, 0, 0, 5, 0, 2, 2, 0, 5, 7, 0, 0, 0, 0, 8, 0, 8, 0, 0, 2, 0, 9, 3, 0, 0, 6, 0, 4, 0, 5, 0, 2, 0, 9, 0, 7, 0, 0, 2, 0, 8, 0, 0, 3, 0, 6, 0, 9, 0, 0, 5];
-var TableroDificil = [6, 4, 8, 1, 2, 5, 3, 9, 7, 7, 5, 3, 8, 9, 6, 1, 4, 2, 2, 1, 9, 7, 3, 4, 5, 8, 6, 9, 7, 2, 3, 1, 8, 4, 6, 5, 8, 6, 4, 5, 7, 2, 9, 3, 1, 5, 3, 1, 6, 4, 9, 2, 7, 8, 1, 9, 7, 2, 6, 3, 8, 5, 4, 3, 8, 6, 4, 5, 1, 7, 2, 9, 4, 2, 5, 9, 8, 7, 6, 1, 3];
-var TableroDificilVacio = [6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 3, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 8, 0, 9, 0, 0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 9, 0, 0, 0, 0, 9, 0, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 1, 0];
+var TableroFacil = ["5", "9", "3", "7", "8", "2", "4", "6", "1", "1", "8", "7", "6", "4", "9", "5", "2", "3", "6", "4", "2", "3", "5", "1", "8", "7", "9", "9", "1", "8", "5", "6", "7", "2", "3", "4", "3", "2", "5", "9", "1", "4", "6", "8", "7", "4", "7", "6", "8", "2", "3", "1", "9", "5", "2", "3", "1", "4", "9", "8", "7", "5", "6", "8", "6", "9", "1", "7", "5", "3", "4", "2", "7", "5", "4", "2", "3", "6", "9", "1", "8"];
+var TableroFacilVacio = ["5", "9", "3", "0", "0", "0", "4", "6", "1", "1", "0", "7", "6", "4", "0", "5", "0", "3", "0", "4", "2", "3", "0", "1", "8", "0", "9", "9", "0", "8", "0", "6", "0", "2", "3", "4", "3", "2", "5", "0", "0", "4", "0", "8", "7", "4", "0", "6", "8", "2", "3", "1", "0", "0", "0", "3", "1", "4", "0", "8", "0", "5", "6", "8", "6", "9", "1", "0", "5", "3", "0", "0", "7", "5", "0", "2", "0", "6", "9", "1", "0"];
+var TableroNormal = ["5", "1", "3", "2", "4", "7", "8", "9", "6", "6", "2", "8", "9", "5", "1", "4", "7", "3", "7", "9", "4", "3", "6", "8", "2", "5", "1", "3", "7", "9", "8", "1", "6", "5", "4", "2", "2", "4", "5", "7", "9", "3", "1", "6", "8", "1", "8", "6", "5", "2", "4", "9", "3", "7", "8", "6", "1", "4", "7", "5", "3", "2", "9", "9", "5", "7", "1", "3", "2", "6", "8", "4", "4", "3", "2", "6", "8", "9", "7", "1", "5"];
+var TableroNormalVacio = ["0", "1", "0", "0", "4", "0", "0", "9", "6", "6", "0", "0", "9", "0", "1", "0", "7", "0", "0", "0", "4", "0", "0", "8", "2", "0", "1", "0", "7", "0", "8", "0", "0", "5", "0", "2", "2", "0", "5", "7", "0", "0", "0", "0", "8", "0", "8", "0", "0", "2", "0", "9", "3", "0", "0", "6", "0", "4", "0", "5", "0", "2", "0", "9", "0", "7", "0", "0", "2", "0", "8", "0", "0", "3", "0", "6", "0", "9", "0", "0", "5"];
+var TableroDificil = ["6", "4", "8", "1", "2", "5", "3", "9", "7", "7", "5", "3", "8", "9", "6", "1", "4", "2", "2", "1", "9", "7", "3", "4", "5", "8", "6", "9", "7", "2", "3", "1", "8", "4", "6", "5", "8", "6", "4", "5", "7", "2", "9", "3", "1", "5", "3", "1", "6", "4", "9", "2", "7", "8", "1", "9", "7", "2", "6", "3", "8", "5", "4", "3", "8", "6", "4", "5", "1", "7", "2", "9", "4", "2", "5", "9", "8", "7", "6", "1", "3"];
+var TableroDificilVacio = ["6", "0", "0", "0", "2", "0", "0", "0", "0", "0", "0", "3", "0", "0", "6", "0", "0", "0", "0", "0", "0", "0", "3", "0", "0", "8", "0", "9", "0", "0", "0", "0", "0", "0", "0", "5", "0", "6", "0", "0", "0", "2", "0", "0", "0", "0", "0", "1", "0", "0", "9", "0", "0", "0", "0", "9", "0", "0", "0", "0", "8", "0", "0", "0", "8", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "8", "0", "0", "1", "0"];
 //Otras variables
 var Resultado;
 var timeRemaining;
@@ -85,11 +85,11 @@ function CrearSudoku() {
 }
 
 /**
- * Descripción de que hace la función
+ * Esta funcion se encarga de verificar los numeros ingresados al tablero e indicar si el numero ingresado fue correcto o incorrecto, en caso de ser incorrecto vacia la celda y se encarga de restar las vidas 
  * @method Tablero
- * @param {number} i - Explicación de que valor almacena ParámetroA
- * @param {number} num - Explicación de que valor almacena ParámetroB
- * @return Valor que retorna
+ * @param {number} i - Este parametro toma el id de la celda seleccionada para luego ingresar un numero en su posicion
+ * @param {number} num - Este parametro toma el valor de la celda seleccionada para luego ingresar un numero cambiando su valor
+ * @return Devuelve el numero ingresado en caso de ser acertado, en caso contrario vacia la celda
  */
 function Tablero(i, num) {
     var Terminar = 0;
@@ -100,7 +100,20 @@ function Tablero(i, num) {
 
     if (Dificultad == "facil") {
         TableroFacilVacio[i] = num;
-        if (TableroFacil[i] != TableroFacilVacio[i]) {
+        if (TableroFacil[i] == TableroFacilVacio[i]) {
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
+            document.getElementsByClassName("celda")[i].classList.add("Correcto");
+            setTimeout(function () {
+                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroFacilVacio[j] != TableroFacil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
+            }, 1000);
+        } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
             }
@@ -117,24 +130,24 @@ function Tablero(i, num) {
             if (vidas != "ilimitado") {
                 vidas--;
             }
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroFacilVacio[j] != TableroFacil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
         }
     }
     if (Dificultad == "normal") {
         TableroNormalVacio[i] = num;
-        if (TableroNormal[i] != TableroNormalVacio[i]) {
+        if (TableroNormal[i] == TableroNormalVacio[i]) {
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
+            document.getElementsByClassName("celda")[i].classList.add("Correcto");
+            setTimeout(function () {
+                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroNormalVacio[j] != TableroNormal[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
+            }, 1000);
+        } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
             }
@@ -151,24 +164,24 @@ function Tablero(i, num) {
             if (vidas != "ilimitado") {
                 vidas--;
             }
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroNormalVacio[j] != TableroNormal[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
         }
     }
     if (Dificultad == "dificil") {
         TableroDificilVacio[i] = num;
-        if (TableroDificil[i] != TableroDificilVacio[i]) {
+        if (TableroDificil[i] == TableroDificilVacio[i]) {
+            for (let j = 0; j < 81; j++) {
+                document.getElementsByTagName("input")[j].disabled = true;
+            }
+            document.getElementsByClassName("celda")[i].classList.add("Correcto");
+            setTimeout(function () {
+                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
+                for (let j = 0; j < 81; j++) {
+                    if (TableroDificilVacio[j] != TableroDificil[j]) {
+                        document.getElementsByTagName("input")[j].disabled = false;
+                    }
+                }
+            }, 1000);
+        } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
             }
@@ -185,19 +198,6 @@ function Tablero(i, num) {
             if (vidas != "ilimitado") {
                 vidas--;
             }
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroDificilVacio[j] != TableroDificil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
         }
     }
 
