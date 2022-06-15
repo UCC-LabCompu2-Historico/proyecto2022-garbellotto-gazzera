@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<br lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>SUDOKU</title>
@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <script type="text/javascript" src="Funciones.js"></script>
 </head>
-<body id="body" onload="CrearSudoku(),starTimer()">
+<body id="body" onload="CrearSudoku(), starTimer()">
 <header>
     <h1>SUDOKU</h1>
 </header>
-
+<br>
 <nav>
     <br>
     <div id="divDificultad">
@@ -40,7 +40,7 @@
         <canvas id="myCanvas" width="0" height="0"></canvas>
     </div>
     <div id="borde_tablero" class="tablero">
-        <table id="tablero" align="center">
+        <table id="tablero">
             <caption id="captionTablero">Tablero Sudoku</caption>
             <tr id="f1" class="fila">
                 <td id="E1" class="Esquina"><input id="1" class="celda" onchange="Tablero(this.id,this.value)"></td>

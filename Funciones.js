@@ -403,7 +403,6 @@ function BotonJugar() {
     if (document.getElementById("nombre").value == "") {
         alert("Tiene que ingresar un nombre");
     } else {
-        url = "jugar-2.html";
-        window.open(url);
+        window.open("jugar-2.html");
     }
 }

@@ -5,33 +5,32 @@ header {
     width: 99%;
     background: rgb(71, 71, 71);
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     border: 3px solid rgb(255, 101, 71);
 }
 
 h1 {
     height: 75px;
-    width: 100%;
     background: rgb(71, 71, 71);
     color: white;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    text-shadow: 0px 1px 0px rgb(255, 101, 71),
-    0px 2px 0px rgb(219, 90, 64),
-    0px 3px 0px rgb(199, 79, 54),
-    0px 4px 0px rgb(180, 72, 50),
-    0px 5px 0px rgb(161, 72, 54),
-    0px 6px 0px rgb(143, 57, 40),
-    0px 7px 0px rgb(100, 38, 26),
-    0px 8px 7px rgb(0, 0, 0);
+    text-shadow: 0 1px 0 rgb(255, 101, 71),
+    0 2px 0 rgb(219, 90, 64),
+    0 3px 0 rgb(199, 79, 54),
+    0 4px 0 rgb(180, 72, 50),
+    0 5px 0 rgb(161, 72, 54),
+    0 6px 0 rgb(143, 57, 40),
+    0 7px 0 rgb(100, 38, 26),
+    0 8px 7px rgb(0, 0, 0);
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     border: 3px solid rgb(255, 101, 71);
-    border-top: 0px;
+    border-top: 0;
     width: 99%;
 }
 
@@ -173,8 +172,8 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
-    margin: 0px 20px;
-    padding: 0px 10px;
+    margin: 0 20px;
+    padding: 0 10px;
 }
 
 .formulario_dificultad:hover {
@@ -412,12 +411,12 @@ td {
 
 .borde_1 {
     border: 1px solid rgb(71, 71, 71);
-    border-top: 0px;
+    border-top: 0;
 }
 
 .borde_2 {
     border: 1px solid rgb(71, 71, 71);
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 
 .borde_derecho {
@@ -468,7 +467,7 @@ td {
     margin: 0px;
     color: rgb(255, 101, 71);
     text-shadow: 0 0 10px rgb(88, 88, 88), 0 0 20px rgb(158, 158, 158), 0 0 20px rgb(212, 212, 212);
-    font-family: Verdana;
+    font-family: Arial;
     outline: 0px;
 }
 
