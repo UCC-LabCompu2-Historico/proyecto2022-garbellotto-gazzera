@@ -417,6 +417,7 @@ function valideKey(evt){
     } else if(code>=48 && code<=57) { // numero
         return true;
     } else{ // otra tecla
+        alert("Solo puede ingresar numeros");
         return false;
     }
 }
