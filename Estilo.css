@@ -577,6 +577,10 @@ td {
     display: none;
 }
 
+#captionTablero{
+    display: none;
+}
+
 .mostrarCanvas {
     display: block;
 }
