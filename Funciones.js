@@ -114,7 +114,9 @@ function Tablero(i, num) {
                     }
                 }
             }, 1000);
-            vidas--;
+            if (vidas != "ilimitado") {
+                vidas--;
+            }
         } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
@@ -146,7 +148,9 @@ function Tablero(i, num) {
                     }
                 }
             }, 1000);
-            vidas--;
+            if (vidas != "ilimitado") {
+                vidas--;
+            }
         } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
@@ -178,7 +182,9 @@ function Tablero(i, num) {
                     }
                 }
             }, 1000);
-            vidas--;
+            if (vidas != "ilimitado") {
+                vidas--;
+            }
         } else {
             for (let j = 0; j < 81; j++) {
                 document.getElementsByTagName("input")[j].disabled = true;
@@ -195,7 +201,9 @@ function Tablero(i, num) {
         }
     }
 
-    document.getElementById("Mostrar_Vidas").innerHTML = "Vidas | " + vidas;
+    if (vidas != "ilimitado") {
+        document.getElementById("Mostrar_Vidas").innerHTML = "Vidas | " + vidas;
+    }
 
     if (vidas == 0) {
         Terminar = 1;
