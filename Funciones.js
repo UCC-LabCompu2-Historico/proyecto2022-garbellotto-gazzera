@@ -14,7 +14,7 @@ var timer;
 timer = localStorage.getItem("timerLS");
 
 /**
- * La funcion establece que si la Dificultad no esta establecida se defina como normal
+ * La función establece que si la Dificultad no está establecida se defina como normal
  * @method Dificultad
  * @param {string} dificultad - Almacena el valor de la dificultad que puede ser: facil, normal o dificil
  * @return retorna un {string} en este caso "normal" el cual se iguala a dificultad y hace que tome ese valor. Tambien le da el valor de dificultad a "dificultadLS" para luego usarla.
