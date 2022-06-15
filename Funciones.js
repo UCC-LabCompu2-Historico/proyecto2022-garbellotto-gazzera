@@ -328,7 +328,7 @@ function endgame() {
     canvas.width = 1000;
     canvas.height = 300;
 
-    var animacion = setInterval(() => {
+    setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
