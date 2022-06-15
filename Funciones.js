@@ -408,13 +408,16 @@ function BotonJugar() {
 }
 
 
-function valideKey(evt){
+function valideKey(evt) {
 
     var code = (evt.which) ? evt.which : evt.keyCode;
 
-    if(code==8) { // espacio
+    if (code == 8) { // Espacio
+
+    } else if (code == 13){ //Enter
         return true;
-    } else if(code>=48 && code<=57) { // numero
+    }
+    else if(code>=48 && code<=57) { // numero
         return true;
     } else{ // otra tecla
         alert("Solo puede ingresar numeros");
