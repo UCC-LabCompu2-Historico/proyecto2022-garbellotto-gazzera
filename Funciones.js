@@ -370,9 +370,11 @@ function endgame() {
     let ctx = canvas.getContext("2d");
     var contador = 20;
     var contador2 = 180;
+    var Nombre;
+    Nombre = localStorage.getItem("nombreLS");
 
     canvas.width = 1000;
-    canvas.height = 300;
+    canvas.height = 380;
 
     setInterval(() => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -382,15 +384,19 @@ function endgame() {
         ctx.strokeStyle = "rgb(255, 76, 41)";
 
         if (Resultado == "Gano") {
-            ctx.fillText("GANASTE", canvas.width / 2, canvas.height / 2);
-            ctx.strokeText("GANASTE", canvas.width / 2, canvas.height / 2);
+            ctx.fillText("GANASTE", canvas.width / 2, canvas.height / 3.5);
+            ctx.fillText(Nombre, canvas.width / 2, canvas.height / 1.3);
+            ctx.strokeText("GANASTE", canvas.width / 2, canvas.height / 3.5);
+            ctx.strokeText(Nombre, canvas.width / 2, canvas.height / 1.3);
             ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
             ctx.shadowOffsetX = 3;
             ctx.shadowOffsetY = 3;
             ctx.shadowBlur = 3;
         } else {
-            ctx.fillText("PERDISTE", canvas.width / 2, canvas.height / 2);
-            ctx.strokeText("PERDISTE", canvas.width / 2, canvas.height / 2);
+            ctx.fillText("PERDISTE", canvas.width / 2, canvas.height / 3.5);
+            ctx.fillText(Nombre, canvas.width / 2, canvas.height / 1.3);
+            ctx.strokeText("PERDISTE", canvas.width / 2, canvas.height / 3.5);
+            ctx.strokeText(Nombre, canvas.width / 2, canvas.height / 1.3);
             ctx.shadowColor = "rgb(88, 88, 88, 0.6)";
             ctx.shadowOffsetX = 3;
             ctx.shadowOffsetY = 3;
@@ -446,6 +452,9 @@ function txNombres() {
  * @return retorna un alert diciendo que debe ingresar un nombre.
  */
 function BotonJugar() {
+    var Nombre;
+    Nombre = document.getElementById("nombre").value;
+    localStorage.setItem("nombreLS", Nombre);
     if (document.getElementById("nombre").value == "") {
         alert("Tiene que ingresar un nombre");
     } else {
