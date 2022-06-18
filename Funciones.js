@@ -1,10 +1,6 @@
 //Tableros
-var TableroFacil = ["5", "9", "3", "7", "8", "2", "4", "6", "1", "1", "8", "7", "6", "4", "9", "5", "2", "3", "6", "4", "2", "3", "5", "1", "8", "7", "9", "9", "1", "8", "5", "6", "7", "2", "3", "4", "3", "2", "5", "9", "1", "4", "6", "8", "7", "4", "7", "6", "8", "2", "3", "1", "9", "5", "2", "3", "1", "4", "9", "8", "7", "5", "6", "8", "6", "9", "1", "7", "5", "3", "4", "2", "7", "5", "4", "2", "3", "6", "9", "1", "8"];
-var TableroFacilVacio = ["5", "9", "3", "0", "0", "0", "4", "6", "1", "1", "0", "7", "6", "4", "0", "5", "0", "3", "0", "4", "2", "3", "0", "1", "8", "0", "9", "9", "0", "8", "0", "6", "0", "2", "3", "4", "3", "2", "5", "0", "0", "4", "0", "8", "7", "4", "0", "6", "8", "2", "3", "1", "0", "0", "0", "3", "1", "4", "0", "8", "0", "5", "6", "8", "6", "9", "1", "0", "5", "3", "0", "0", "7", "5", "0", "2", "0", "6", "9", "1", "0"];
-var TableroNormal = ["5", "1", "3", "2", "4", "7", "8", "9", "6", "6", "2", "8", "9", "5", "1", "4", "7", "3", "7", "9", "4", "3", "6", "8", "2", "5", "1", "3", "7", "9", "8", "1", "6", "5", "4", "2", "2", "4", "5", "7", "9", "3", "1", "6", "8", "1", "8", "6", "5", "2", "4", "9", "3", "7", "8", "6", "1", "4", "7", "5", "3", "2", "9", "9", "5", "7", "1", "3", "2", "6", "8", "4", "4", "3", "2", "6", "8", "9", "7", "1", "5"];
-var TableroNormalVacio = ["0", "1", "0", "0", "4", "0", "0", "9", "6", "6", "0", "0", "9", "0", "1", "0", "7", "0", "0", "0", "4", "0", "0", "8", "2", "0", "1", "0", "7", "0", "8", "0", "0", "5", "0", "2", "2", "0", "5", "7", "0", "0", "0", "0", "8", "0", "8", "0", "0", "2", "0", "9", "3", "0", "0", "6", "0", "4", "0", "5", "0", "2", "0", "9", "0", "7", "0", "0", "2", "0", "8", "0", "0", "3", "0", "6", "0", "9", "0", "0", "5"];
-var TableroDificil = ["6", "4", "8", "1", "2", "5", "3", "9", "7", "7", "5", "3", "8", "9", "6", "1", "4", "2", "2", "1", "9", "7", "3", "4", "5", "8", "6", "9", "7", "2", "3", "1", "8", "4", "6", "5", "8", "6", "4", "5", "7", "2", "9", "3", "1", "5", "3", "1", "6", "4", "9", "2", "7", "8", "1", "9", "7", "2", "6", "3", "8", "5", "4", "3", "8", "6", "4", "5", "1", "7", "2", "9", "4", "2", "5", "9", "8", "7", "6", "1", "3"];
-var TableroDificilVacio = ["6", "0", "0", "0", "2", "0", "0", "0", "0", "0", "0", "3", "0", "0", "6", "0", "0", "0", "0", "0", "0", "0", "3", "0", "0", "8", "0", "9", "0", "0", "0", "0", "0", "0", "0", "5", "0", "6", "0", "0", "0", "2", "0", "0", "0", "0", "0", "1", "0", "0", "9", "0", "0", "0", "0", "9", "0", "0", "0", "0", "8", "0", "0", "0", "8", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "8", "0", "0", "1", "0"];
+var tablero = [];
+var tableroVacio = [];
 //Otras variables
 var Resultado;
 var timeRemaining;
@@ -50,36 +46,176 @@ function CrearSudoku() {
     var Dificultad;
     Dificultad = localStorage.getItem("dificultadLS");
 
+    for (let i = 0; i < 81; i++) {
+        tablero[i] = 0;
+    }
+
+    var Dif, ComprobarNumero=0, PosicionCelda=0, Cuadrante=0, Contador=0, MismaPosicion=0, Fila, Columna, Random, contador=0, contador2=0, contador3=0;
+    do
+    {
+        if (MismaPosicion == PosicionCelda)
+        {
+            contador ++;
+            if (contador > 25)
+            {
+                for (let i = 0; i < 81; i++)
+                {
+                    tablero[i] = 0;
+                }
+                PosicionCelda = 0;
+                Cuadrante = 0;
+                ComprobarNumero = 0;
+            }
+        }
+        else
+        {
+            contador = 0;
+        }
+
+        MismaPosicion = PosicionCelda;
+
+        tablero[PosicionCelda] = Math.floor(Math.random() * (10 - 1)) + 1;
+
+        ComprobarNumero = tablero[PosicionCelda];
+
+        Cuadrante = PosicionCelda;
+
+        /*
+        1  2  3    4  5  6    7  8  9
+        10 11 12   13 14 15   16 17 18
+        19 20 21   22 23 24   25 26 27
+
+        28 29 30   31 32 33   34 35 36
+        37 38 39   40 41 42   43 44 45
+        46 47 48   49 50 51   52 53 54
+
+        55 56 57   58 59 60   61 62 63
+        64 65 66   67 68 69   70 71 72
+        73 74 75   76 77 78   79 80 81
+        */
+
+        if (Cuadrante < 27) {
+            while (Cuadrante > 8) {
+                Cuadrante -= 9;
+            }
+            while (Cuadrante != 0 && Cuadrante != 3 && Cuadrante != 6) {
+                Cuadrante --;
+            }
+        }
+        else if (Cuadrante < 54) {
+            while (Cuadrante > 35) {
+                Cuadrante -= 9;
+            }
+            while (Cuadrante != 27 && Cuadrante != 30 && Cuadrante != 33) {
+                Cuadrante --;
+            }
+        }
+        else {
+            while (Cuadrante > 62) {
+                Cuadrante -= 9;
+            }
+            while (Cuadrante != 54 && Cuadrante != 57 && Cuadrante != 60) {
+                Cuadrante --;
+            }
+        }
+
+        Fila = PosicionCelda;
+        while (Fila % 9 != 0) {
+            Fila --;
+        }
+
+        Columna = PosicionCelda;
+        while (Columna > 8) {
+            Columna -= 9;
+        }
+
+        contador2 = 0;
+
+        for (let i = Cuadrante; i < Cuadrante + 21; i++) {
+            if (contador2 == 3) {
+                contador2 = 0;
+                i += 6;
+            }
+            if (ComprobarNumero == tablero[i] && PosicionCelda != i) {
+                ComprobarNumero = 0;
+                i = Cuadrante + 21;
+            }
+            contador2 ++;
+        }
+
+        if (ComprobarNumero != 0)
+        {
+            for (let i = Fila; i < Fila + 9; i++)
+            {
+                if (ComprobarNumero == tablero[i] && PosicionCelda != i)
+                {
+                    ComprobarNumero = 0;
+                    i = Fila + 9;
+                }
+            }
+        }
+
+        if (ComprobarNumero != 0)
+        {
+            for (let i = Columna; i < Columna + 72; i += 9)
+            {
+                if (ComprobarNumero == tablero[i] && PosicionCelda != i)
+                {
+                    ComprobarNumero = 0;
+                    i = Columna + 72;
+                }
+            }
+        }
+        
+        if (ComprobarNumero != 0)
+        {
+            PosicionCelda += 1;
+        }
+        else
+        {
+            tablero[PosicionCelda] = 0;
+        }
+    } while (PosicionCelda < 81);
+
+    for (let i = 0; i < 81; i++) {
+        tableroVacio[i] = tablero[i];
+    }
+    
     if (Dificultad == "facil") {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Facil";
+        Dif = 3;
     }
     if (Dificultad == "normal") {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Normal";
+        Dif = 5;
     }
     if (Dificultad == "dificil") {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Dificil";
+        Dif = 7;
     }
 
     document.getElementById("Mostrar_Vidas").innerHTML = "Vidas | " + vidas;
 
+    for (let i = 0; i < 81; i += 9) {
+        contador3 = 0;
+        do {
+            Random = Math.floor(Math.random() * ((i + 9) - i)) + i;
+
+            if (tableroVacio[Random] == 0) {
+                contador3 --;
+            }
+            else {
+                tableroVacio[Random] = 0;
+            }
+
+            contador3 ++;
+        } while (contador3 < Dif);
+    }
+
     for (let i = 0; i < 81; i++) {
-        if (Dificultad == "facil") {
-            if (TableroFacilVacio[i] != 0) {
-                document.getElementsByClassName("celda")[i].value = TableroFacilVacio[i];
-                document.getElementsByTagName("input")[i].disabled = true;
-            }
-        }
-        if (Dificultad == "normal") {
-            if (TableroNormalVacio[i] != 0) {
-                document.getElementsByClassName("celda")[i].value = TableroNormalVacio[i];
-                document.getElementsByTagName("input")[i].disabled = true;
-            }
-        }
-        if (Dificultad == "dificil") {
-            if (TableroDificilVacio[i] != 0) {
-                document.getElementsByClassName("celda")[i].value = TableroDificilVacio[i];
-                document.getElementsByTagName("input")[i].disabled = true;
-            }
+        if (tableroVacio[i] != 0) {
+            document.getElementsByClassName("celda")[i].value = tablero[i];
+            document.getElementsByTagName("input")[i].disabled = true;
         }
     }
 }
@@ -98,106 +234,36 @@ function Tablero(i, num) {
 
     i--;
 
-    if (Dificultad == "facil") {
-        TableroFacilVacio[i] = num;
-        if (TableroFacil[i] == TableroFacilVacio[i]) {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroFacilVacio[j] != TableroFacil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
-                document.getElementsByClassName("celda")[i].value = "";
-                for (let j = 0; j < 81; j++) {
-                    if (TableroFacilVacio[j] != TableroFacil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
-            if (vidas != "ilimitado") {
-                vidas--;
-            }
+    tableroVacio[i] = num;
+    if (tableroVacio[i] == tablero[i]) {
+        for (let j = 0; j < 81; j++) {
+            document.getElementsByTagName("input")[j].disabled = true;
         }
-    }
-    if (Dificultad == "normal") {
-        TableroNormalVacio[i] = num;
-        if (TableroNormal[i] == TableroNormalVacio[i]) {
+        document.getElementsByClassName("celda")[i].classList.add("Correcto");
+        setTimeout(function () {
+            document.getElementsByClassName("celda")[i].classList.remove("Correcto");
             for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroNormalVacio[j] != TableroNormal[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
+                if (tableroVacio[j] != tablero[j]) {
+                    document.getElementsByTagName("input")[j].disabled = false;
                 }
-            }, 1000);
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
             }
-            document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
-                document.getElementsByClassName("celda")[i].value = "";
-                for (let j = 0; j < 81; j++) {
-                    if (TableroNormalVacio[j] != TableroNormal[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
-            if (vidas != "ilimitado") {
-                vidas--;
-            }
+        }, 1000);
+    } else {
+        for (let j = 0; j < 81; j++) {
+            document.getElementsByTagName("input")[j].disabled = true;
         }
-    }
-    if (Dificultad == "dificil") {
-        TableroDificilVacio[i] = num;
-        if (TableroDificil[i] == TableroDificilVacio[i]) {
+        document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
+        setTimeout(function () {
+            document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
+            document.getElementsByClassName("celda")[i].value = "";
             for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
-            }
-            document.getElementsByClassName("celda")[i].classList.add("Correcto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Correcto");
-                for (let j = 0; j < 81; j++) {
-                    if (TableroDificilVacio[j] != TableroDificil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
+                if (tableroVacio[j] != tablero[j]) {
+                    document.getElementsByTagName("input")[j].disabled = false;
                 }
-            }, 1000);
-        } else {
-            for (let j = 0; j < 81; j++) {
-                document.getElementsByTagName("input")[j].disabled = true;
             }
-            document.getElementsByClassName("celda")[i].classList.add("Incorrecto");
-            setTimeout(function () {
-                document.getElementsByClassName("celda")[i].classList.remove("Incorrecto");
-                document.getElementsByClassName("celda")[i].value = "";
-                for (let j = 0; j < 81; j++) {
-                    if (TableroDificilVacio[j] != TableroDificil[j]) {
-                        document.getElementsByTagName("input")[j].disabled = false;
-                    }
-                }
-            }, 1000);
-            if (vidas != "ilimitado") {
-                vidas--;
-            }
+        }, 1000);
+        if (vidas != "ilimitado") {
+            vidas--;
         }
     }
 
@@ -210,32 +276,12 @@ function Tablero(i, num) {
         Resultado = "Perdio";
     } else {
         for (let j = 0; j < 81; j++) {
-            if (Dificultad == "facil") {
-                if (TableroFacilVacio[j] == TableroFacil[j]) {
-                    Terminar = 1;
-                    Resultado = "Gano";
-                } else {
-                    Terminar = 0;
-                    j = 81;
-                }
-            }
-            if (Dificultad == "normal") {
-                if (TableroNormalVacio[j] == TableroNormal[j]) {
-                    Terminar = 1;
-                    Resultado = "Gano";
-                } else {
-                    Terminar = 0;
-                    j = 81;
-                }
-            }
-            if (Dificultad == "dificil") {
-                if (TableroDificilVacio[j] == TableroDificil[j]) {
-                    Terminar = 1;
-                    Resultado = "Gano";
-                } else {
-                    Terminar = 0;
-                    j = 81;
-                }
+            if (tableroVacio[j] == tablero[j]) {
+                Terminar = 1;
+                Resultado = "Gano";
+            } else {
+                Terminar = 0;
+                j = 81;
             }
         }
     }
