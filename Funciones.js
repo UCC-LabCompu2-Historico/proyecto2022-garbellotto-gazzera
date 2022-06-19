@@ -4,10 +4,8 @@ var tableroVacio = [];
 //Otras variables
 var Resultado;
 var timeRemaining;
-var vidas;
-vidas = localStorage.getItem("vidasLS");
-var timer;
-timer = localStorage.getItem("timerLS");
+var vidas = localStorage.getItem("vidasLS");
+var timer = localStorage.getItem("timerLS");
 
 /**
  * La función establece que si la Dificultad no está establecida se defina como normal
@@ -73,26 +71,9 @@ function CrearSudoku() {
         }
 
         MismaPosicion = PosicionCelda;
-
         tablero[PosicionCelda] = Math.floor(Math.random() * (10 - 1)) + 1;
-
         ComprobarNumero = tablero[PosicionCelda];
-
         Cuadrante = PosicionCelda;
-
-        /*
-        1  2  3    4  5  6    7  8  9
-        10 11 12   13 14 15   16 17 18
-        19 20 21   22 23 24   25 26 27
-
-        28 29 30   31 32 33   34 35 36
-        37 38 39   40 41 42   43 44 45
-        46 47 48   49 50 51   52 53 54
-
-        55 56 57   58 59 60   61 62 63
-        64 65 66   67 68 69   70 71 72
-        73 74 75   76 77 78   79 80 81
-        */
 
         if (Cuadrante < 27) {
             while (Cuadrante > 8) {
@@ -171,10 +152,12 @@ function CrearSudoku() {
         {
             PosicionCelda += 1;
         }
+
         else
         {
             tablero[PosicionCelda] = 0;
         }
+
     } while (PosicionCelda < 81);
 
     for (let i = 0; i < 81; i++) {
@@ -185,10 +168,12 @@ function CrearSudoku() {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Facil";
         Dif = 3;
     }
+    
     if (Dificultad == "normal") {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Normal";
         Dif = 5;
     }
+
     if (Dificultad == "dificil") {
         document.getElementById("Mostrar_Dificultad").innerHTML = "Dificultad | Dificil";
         Dif = 7;
@@ -432,16 +417,19 @@ function endgame() {
 
 /**
  * Esta funcion bloquea el ingreso de numeros, espacios y otras teclas que no sean de letras en el input del nombre. De esta manera solo deja ingresar las letras.
- * @method txNombres
- * @return Si se toca una tecla que no es de una letra retorna un alert diciendo que solo se pueden ingresar letras
+ * @method Nombres
+ * @param {string} nombre - Almacena el nombre ingresado al input para verificar que solo contenga letras
+ * @return Si se presiona una tecla que no es de una letra retorna un alert diciendo que solo se pueden ingresar letras
  */
-function txNombres() {
-    //Lee en que tecla se hace click
-    if ((event.keyCode = 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)) {
-        alert("Solo puede ingresar letras");
-    }
-    if ((event.keyCode != 32) && (event.keyCode < 65) || (event.keyCode > 90) && (event.keyCode < 97) || (event.keyCode > 122)) {
-        event.returnValue = false;
+function Nombres(nombre) {
+    //Verifica que el nombre ingresado solo contenga letras
+    const SoloLetras = /^[a-zA-Z]{1,8}$/;
+
+    if (!SoloLetras.test(nombre)){
+        if (nombre != "") {
+            alert("Solo puede ingresar letras");
+            document.getElementById("nombre").value = "";
+        }
     }
 }
 
@@ -462,17 +450,19 @@ function BotonJugar() {
     }
 }
 
-
-function valideKey(evt) {
-
-    var code = (evt.which) ? evt.which : evt.keyCode;
-
-    if (code == 13){ //Enter
-        return true;
-    } else if(code>=48 && code<=57) { // numero
-        return true;
-    } else{ // otra tecla
-        alert("Solo puede ingresar numeros");
-        return false;
+/**
+ * Esta funcion bloquea el ingreso de letras, espacios y otras teclas que no sean de numeros en el input de las celdas del tablero. De esta manera solo deja ingresar numeros.
+ * @method ValidarNumero
+ * @param {number} id - Almacena el id del input seleccionado para verificar que solo contenga numeros
+ * @param {number} num - Almacena el numero ingresado al input para verificar que solo contenga numeros
+ * @return retorna un alert diciendo que debe ingresar solo numeros.
+ */
+function ValidarNumero(id,num) {
+    const SoloNumeros = /[1-9]/;
+    if (!SoloNumeros.test(num)){
+        if (num != "") {
+            alert("Solo se puede ingresar un numero");
+            document.getElementById(id).value = "";
+        }
     }
 }

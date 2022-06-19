@@ -43,103 +43,103 @@
         <table id="tablero">
             <caption id="captionTablero">Tablero Sudoku</caption>
             <tr id="f1" class="fila">
-                <td id="E1" class="Esquina"><input id="1" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1"><input id="2" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1_derecho"><input id="3" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1"><input id="4" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1"><input id="5" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1_derecho"><input id="6" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1"><input id="7" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_1"><input id="8" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td id="E2" class="Esquina"><input id="9" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td id="E1" class="Esquina"><input id="1" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1"><input id="2" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1_derecho"><input id="3" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1"><input id="4" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1"><input id="5" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1_derecho"><input id="6" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1"><input id="7" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_1"><input id="8" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td id="E2" class="Esquina"><input id="9" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f2" class="fila">
-                <td class="borde_3"><input id="10" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="11" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="12" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="13" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="14" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="15" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="16" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="17" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="18" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="10" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="11" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="12" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="13" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="14" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="15" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="16" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="17" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="18" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f3" class="borde_fila">
-                <td class="borde_3"><input id="19" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="20" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="21" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="22" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="23" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="24" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="25" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="26" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="27" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="19" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="20" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="21" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="22" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="23" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="24" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="25" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="26" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="27" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f4" class="fila">
-                <td class="borde_3"><input id="28" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="29" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="30" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="31" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="32" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="33" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="34" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="35" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="36" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="28" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="29" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="30" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="31" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="32" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="33" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="34" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="35" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="36" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f5" class="fila">
-                <td class="borde_3"><input id="37" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="38" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="39" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="40" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="41" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="42" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="43" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="44" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="45" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="37" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="38" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="39" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="40" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="41" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="42" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="43" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="44" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="45" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f6" class="borde_fila">
-                <td class="borde_3"><input id="46" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="47" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="48" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="49" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="50" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="51" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="52" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="53" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="54" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="46" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="47" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="48" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="49" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="50" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="51" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="52" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="53" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="54" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f7" class="fila">
-                <td class="borde_3"><input id="55" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="56" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="57" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="58" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="59" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="60" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="61" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="62" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="63" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="55" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="56" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="57" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="58" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="59" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="60" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="61" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="62" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="63" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f8" class="fila">
-                <td class="borde_3"><input id="64" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="65" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="66" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="67" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="68" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_derecho"><input id="69" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="70" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde"><input id="71" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_4"><input id="72" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td class="borde_3"><input id="64" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="65" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="66" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="67" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="68" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_derecho"><input id="69" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="70" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde"><input id="71" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_4"><input id="72" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
             <tr id="f9" class="fila">
-                <td id="E3" class="Esquina"><input id="73" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2"><input id="74" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2_derecho"><input id="75" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2"><input id="76" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2"><input id="77" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2_derecho"><input id="78" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2"><input id="79" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td class="borde_2"><input id="80" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
-                <td id="E4" class="Esquina"><input id="81" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeypress="return valideKey(event);"></td>
+                <td id="E3" class="Esquina"><input id="73" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2"><input id="74" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2_derecho"><input id="75" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2"><input id="76" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2"><input id="77" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2_derecho"><input id="78" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2"><input id="79" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td class="borde_2"><input id="80" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
+                <td id="E4" class="Esquina"><input id="81" class="celda" onchange="Tablero(this.id,this.value)" maxlength="1" onkeyup="ValidarNumero(this.id,this.value)"></td>
             </tr>
         </table>
     </div>

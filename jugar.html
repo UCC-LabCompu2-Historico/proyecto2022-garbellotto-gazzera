@@ -22,14 +22,9 @@
     <form>
         <p id="formulario_dificultad">
             <label for="formulario_dificultad"><b>Dificultad: </b></label>
-            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil"
-                   onclick="Dificultad(this.value)"> <label class="formulario_dificultad"
-                                                            for="radio_facil">Facil</label>
-            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal"
-                   onclick="Dificultad(this.value)" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
-            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil"
-                   onclick="Dificultad(this.value)"> <label class="formulario_dificultad"
-                                                            for="radio_dificil">Dificil</label>
+            <input type="radio" name="dificultad" class="input" value="facil" id="radio_facil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_facil">Facil</label>
+            <input type="radio" name="dificultad" class="input" value="normal" id="radio_normal" onclick="Dificultad(this.value)" checked> <label class="formulario_dificultad" for="radio_normal">Normal</label>
+            <input type="radio" name="dificultad" class="input" value="dificil" id="radio_dificil" onclick="Dificultad(this.value)"> <label class="formulario_dificultad" for="radio_dificil">Dificil</label>
         </p>
 
         <p id="formulario_tiempo" class="p_tiempo_vidas">
@@ -55,7 +50,7 @@
 
         <p id="formulario_nombre">
             <label for="formulario_nombre"><b>Nombre: </b></label>
-            <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeypress="txNombres()" maxlength="8">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeyup="Nombres(this.value)" maxlength="8">
         </p>
     </form>
 </div>
