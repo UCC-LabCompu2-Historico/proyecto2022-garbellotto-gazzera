@@ -119,10 +119,10 @@ Se debe agregar funcionalidad Js a la página HTML+CSS desarrollada
 
 ## Requisitos del FINAL
 
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
-- [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
-- [ ] No debe haber errores JavaScript presentes (F12 > Consola)
-- [ ] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar,
+- [x] Todas las correcciones y mejoras solicitadas durante el primer y segundo parcial deben estar corregidas.
+- [x] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
+- [x] No debe haber errores JavaScript presentes (F12 > Consola)
+- [x] Debe cumplir con TODOS los requisitos del 1er y 2do Parcial (si se agrego código nuevo en Js, se debe documentar,
   si hay nuevos inputs de html deben contener su label, etc)
 - [x] El Canvas debe poseer animación con setInterval() o requestAnimationFrame()
-- [ ] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados.
+- [x] El cálculo del ejercicio de física/etc debe ser el correcto, independientemente de los valores ingresados.
