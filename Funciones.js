@@ -322,7 +322,7 @@ function starTimer() {
             }
         }, 1000)
     } else {
-        document.getElementById("timer").innerHTML = "Tiempo | Ilimitado";
+        document.getElementById("timer").innerHTML = "Tiempo | ilimitado";
     }
 }
 
