@@ -473,81 +473,50 @@ td {
 
 .borde:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_1:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-right: 2px solid rgba(255, 42, 0, 0.01);
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_2:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-right: 2px solid rgba(255, 42, 0, 0.01);
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_derecho:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_1_derecho:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_2_derecho:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_3:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
-    border-right: 2px solid rgba(255, 42, 0, 0.01);
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .borde_4:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 #E1:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-top-left-radius: 7px;
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
-    border-right: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 #E2:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-top-right-radius: 7px;
-    border-bottom: 2px solid rgba(255, 42, 0, 0.01);
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 #E3:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-bottom-left-radius: 7px;
-    border-top: 2px solid rgba(255, 42, 0, 0.01);
-    border-right: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 #E4:hover {
     background-color: rgba(255, 42, 0, 0.5);
-    border-bottom-right-radius: 7px;
-    border-left: 2px solid rgba(255, 42, 0, 0.01);
 }
 
 .Incorrecto {
