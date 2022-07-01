@@ -48,7 +48,7 @@ function CrearSudoku() {
         tablero[i] = 0;
     }
 
-    var Dif, ComprobarNumero=0, PosicionCelda=0, Cuadrante=0, Contador=0, MismaPosicion=0, Fila, Columna, Random, contador=0, contador2=0, contador3=0;
+    var Dif, ComprobarNumero=0, PosicionCelda=0, Cuadrante=0, MismaPosicion=0, Fila, Columna, Random, contador=0, contador2=0, contador3=0;
     do
     {
         if (MismaPosicion == PosicionCelda)
