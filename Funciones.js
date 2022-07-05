@@ -34,11 +34,10 @@ function Vidas(vidas) {
 }
 
 /**
- * Esta funcion muestra el tablero indicado segun la dificultad. Tambien permite que se muestre en los casilleros la dificultad y las vidas elegidas por el usuario.
+ * Esta función crea el Sudoku de manera aleatoria segun la dificultad elegida.
  * @method CrearSudoku
  * @param (var) Dificultad - (llamada dentro de la funcion) este parametro toma el valor de dificultadLS que fue anteriormente establecido en la funcion Dificultad()
- * @param (var) vidas - El id de vidas toma el valor establecido en la funcion Vidas()
- * @return Devuelve los valores de las vidas y dificultad para asi mostrar el tablero indicado segun la dificultad y tambien indicar la cantidad de vidas que el jugador posee.
+ * @return Devuelve un tablero con numeros aleatorios.
  */
 function CrearSudoku() {
     var Dificultad;
