@@ -2,7 +2,7 @@
 
 Esta página es de entretenimiento. Aqui puedes jugar al SUDOKU!
 
-Link al sitio: [Sudoku](https://ucc-labcompu2.github.io/proyecto2022-garbellotto-gazzera/)
+Link al sitio: [Sudoku](https://ucc-labcompu2-Historico.github.io/proyecto2022-garbellotto-gazzera/)
 
 ## Autores
 
